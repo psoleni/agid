@@ -1,0 +1,8 @@
+tipologie amministrazioni coinvolte:
+(tabella pa.tipi_amministrazioni)
+"L8";"Aziende Ospedaliere, Aziende Ospedaliere Universitarie, Policlinici e Istituti di Ricovero e Cura a Carattere Scientifico Pubblici"
+"L7";"Aziende Sanitarie Locali"
+"L22";"Agenzie Regionali Sanitarie"
+
+
+1 - consistenza rispetto all'elenco di amministrazioni

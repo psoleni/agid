@@ -1,0 +1,96 @@
+# install.packages("RPostgreSQL")
+require("RPostgreSQL")
+
+# create a connection
+# save the password that we can "hide" it as best as we can by collapsing it
+pw <- {
+  "paolo"
+}
+
+# loads the PostgreSQL driver
+drv <- dbDriver("PostgreSQL")
+# creates a connection to the postgres database
+# note that "con" will be used later in each connection to the database
+con <- dbConnect(drv, dbname = "dbpa2",
+                 host = "localhost", port = 5432,
+                 user = "postgres", password = pw)
+rm(pw) # removes the password
+
+# check table (test connection)
+dbExistsTable(con, c("pa","amministrazioni"))
+
+# query di test
+rs <- dbSendQuery(con, "select * from pa.amministrazioni")
+# estrapola le prime 50 righe
+df <- fetch(rs, n = 50)
+
+
+# Read table from PostgreSQL into R data frame:
+myTable <- dbReadTable(con, c("pa","amministrazioni"))
+
+# creo variabile categoriale fattore codice_tipologia
+myTable$codice_tipologia_fact <- factor(myTable$codice_tipologia)
+summary(myTable$codice_tipologia_fact)
+
+# le tipologie di interesse sono L7, L8, L22
+myTable[myTable$codice_tipologia_fact %in% c("L7","L8","L22"), ]
+myTable$healthsector <- myTable$codice_tipologia_fact %in% c("L7","L8","L22")
+
+# pie diagrams
+tipologie_values<-table(myTable$codice_tipologia_fact)
+tipologie_values_percent<-100*prop.table(table(myTable$codice_tipologia_fact))
+tipologie_lbls<-myTable$codice_tipologia_fact
+pie(tipologie_values, labels=paste(tipologie_lbls,"\n",tipologie_values_percent, "%"))
+# salute pubblica vs tutti gli altri settori
+pie(table(myTable$healthsector), labels=paste(c("Settori diversi","Settori inerenti salute pubblica"),"\n",round(100*prop.table(table(myTable$healthsector)),2)))
+
+# query completa
+
+query<-paste0("
+SELECT 
+tipi_amministrazioni.codice_tipologia, 
+soggetti.denominazione AS soggetto, 
+amministrazioni.denominazione, 
+amministrazioni.codice_ipa, 
+localizzazioni.codice_localizzazione, 
+localizzazioni.comune, 
+localizzazioni.provincia, 
+localizzazioni.regione, 
+tipi_amministrazioni.nome, 
+applicativi.codice_prodotto, 
+applicativi.descrizione, 
+applicativi.rilevanza, 
+prodotti.titolo, 
+prodotti.new, 
+applicativi.new, 
+soggetti.new, 
+produttori.nome, 
+produttori.new, 
+tipi_licenze_app.denominazione, 
+tipi_licenze_app.new
+FROM 
+pa.amministrazioni, 
+pa.tipi_amministrazioni, 
+pa.prodotti, 
+pa.basi_dati, 
+pa.applicativi, 
+pa.tipi_licenze_app, 
+pa.produttori, 
+pa.soggetti, 
+pa.localizzazioni
+WHERE 
+tipi_amministrazioni.codice_tipologia = amministrazioni.codice_tipologia AND
+basi_dati.codice_ipa = amministrazioni.codice_ipa AND
+basi_dati.codice_soggetto = soggetti.codice_soggetto AND
+applicativi.codice_bd = basi_dati.codice_bd AND
+applicativi.codice_prodotto = prodotti.codice_prodotto AND
+applicativi.codice_licenza_app = tipi_licenze_app.codice_licenza_app AND
+produttori.codice_produttore = prodotti.codice_produttore AND
+localizzazioni.codice_localizzazione = amministrazioni.codice_localizzazione
+AND 
+tipi_amministrazioni.codice_tipologia in ('L7','L8','L22')"
+)
+
+rs <- dbSendQuery(con, query)
+# estrapola tutte le righe
+df <- fetch(rs, n =-1)
