@@ -1,0 +1,32 @@
+clusterizzazioni con google refine.
+
+soggetti: prima: 74 
+nearest neighbour - levenstein - radius 1.0 : 3.0
+
+finali : 67
+
+
+
+formati: prima: 148
+key collision / fingerprint / ngram
+nearest neighbour - levenstein - radius 1.0 : 3.0
+significativi accorpamenti MS SQL Server - Microsoft sql server - RDBMS Microsoft SQL Server
+accorpati formati indipendentemente dalla versione (es. Oracle X, Oracle 11)
+
+parziali : 77
+
+
+
+
+prodotto: prima: 1232
+key collision / fingerprint / ngram 
+nearest neighbour - levenstein - radius 1.0 : 6.0
+
+finali : 1087
+
+
+produttore: prima: 576
+key collision / fingerprint / ngram 
+nearest neighbour - levenstein - radius 1.0 : 6.0
+
+finali: 446

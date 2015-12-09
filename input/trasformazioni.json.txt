@@ -1,0 +1,4768 @@
+[
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column soggetto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "soggetto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Altro:personale",
+          "Altro: personale"
+        ],
+        "to": "Altro:personale"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column soggetto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "soggetto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Previdenza e assistenza",
+          "Previdenza ed assistenza",
+          "Previdenza e assisternza"
+        ],
+        "to": "Previdenza e assistenza"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column soggetto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "soggetto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Previdenza e assistenza",
+          "Previdenza assistenza"
+        ],
+        "to": "Previdenza e assistenza"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Altro: specificare Gestione Personale",
+          "Altro: specificare : Gestione del personale"
+        ],
+        "to": "Altro: specificare Gestione Personale"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column soggetto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "soggetto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Organizzazione",
+          "Oragnizzazione"
+        ],
+        "to": "Organizzazione"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column soggetto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "soggetto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Servizi sociale e socio - sanitari",
+          "Servizi sociali e Socio sanitari"
+        ],
+        "to": "Servizi sociali e socio sanitari"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column formato",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "formato",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ms-sql",
+          "Mssql"
+        ],
+        "to": "Mssql"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dbms sql server",
+          "DBMS -SQL Server"
+        ],
+        "to": "Dbms sql server"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DB2 AS/400",
+          "AS400 DB2"
+        ],
+        "to": "DB2 AS/400"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cache",
+          "Caché"
+        ],
+        "to": "Cache"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sqlserver",
+          "SQL-Server"
+        ],
+        "to": "SQL-Server"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column formato",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "formato",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mssqlserver",
+          "Ms sql server",
+          "MS-SQL Server"
+        ],
+        "to": "Microsoft SQL Server"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RDBMS Microsoft SQL Server",
+          "RDBMS Microsoft SQLServer"
+        ],
+        "to": "Microsoft SQL Server"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sql server",
+          "SQL-Server"
+        ],
+        "to": "Sql server"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Oracle 11g",
+          "Oracle 11 g"
+        ],
+        "to": "Oracle 11g"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Microsoft sql server",
+          "Microsoft sql-server"
+        ],
+        "to": "Microsoft sql server"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dbms sql server",
+          "DBMS sqlserver"
+        ],
+        "to": "Microsoft SQL Server"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DBMS MS SQL",
+          "Dbms mssql"
+        ],
+        "to": "Microsoft SQL Server"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dbms mysql",
+          "DBMS My Sql"
+        ],
+        "to": "Mysql"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mysql",
+          "My sql"
+        ],
+        "to": "Mysql"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mssql",
+          "Ms sql"
+        ],
+        "to": "Microsoft SQL Server"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column formato",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "formato",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Microsoft sql server",
+          "Microsoft SQL Server"
+        ],
+        "to": "Microsoft SQL Server"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column formato",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "formato",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RDBMS Mysql",
+          "RBMS MySQL"
+        ],
+        "to": "Mysql"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DB2 AS/400",
+          "DB AS/400"
+        ],
+        "to": "DB2 AS/400"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RDBMS DB2/400",
+          "DBMS DB2/400"
+        ],
+        "to": "DB2 AS/400"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Microsft SQL",
+          "Microsoft sql"
+        ],
+        "to": "Microsoft Sql Server"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DBMS MS Access",
+          "DBMS MS Acess"
+        ],
+        "to": "DBMS MS Access"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column formato",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "formato",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Microsoft SQL Server",
+          "Microsoft Sql Server"
+        ],
+        "to": "Microsoft SQL Server"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column formato",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "formato",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Oracle",
+          "ORACLE10",
+          "Oracle 11g",
+          "Oracle 10g",
+          "ORACLE8",
+          "Oracle X",
+          "Oracle 9"
+        ],
+        "to": "Oracle"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Oracle 11g",
+          "Oracle 10g",
+          "Oracle 9.2",
+          "Oracle X",
+          "Oracle 9"
+        ],
+        "to": "Oracle"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Oracle 11g",
+          "Oracle 9.2",
+          "Oracle X",
+          "Oracle 9"
+        ],
+        "to": "Oracle"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Microsoft Sql Server 2000",
+          "Microsoft Sql Server 2012",
+          "Microsoft sql server 2008",
+          "Microsoft SQL Server 2005"
+        ],
+        "to": "Microsoft Sql Server"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Oracle",
+          "ORACLE8",
+          "Oracle X",
+          "Oracle 9"
+        ],
+        "to": "Oracle"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ms access",
+          "Db Access",
+          "Mdb access"
+        ],
+        "to": "Ms access"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Oracle",
+          "Oracle X",
+          "Oracle 9"
+        ],
+        "to": "Oracle"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Oracle 9.2",
+          "Oracle X",
+          "Oracle 9"
+        ],
+        "to": "Oracle"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ms access",
+          "Access",
+          "Db Access"
+        ],
+        "to": "Ms access"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Microsoft Sql Server 2000",
+          "Microsoft Sql Server 2012",
+          "Microsoft sql server 2008"
+        ],
+        "to": "Microsoft Sql Server"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DBMS IBM DBZ",
+          "DBMS IBM DB2",
+          "DBMS IMB DB2"
+        ],
+        "to": "IBM DB2"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sql server 2008 r2",
+          "SQL Server 2005 SE",
+          "Sql Server 2005"
+        ],
+        "to": "Microsoft Sql Server"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "My SQL 5.1.69",
+          "MySQL 5.1.73"
+        ],
+        "to": "Mysql"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Oracle 9.2",
+          "Oracle X"
+        ],
+        "to": "Oracle"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DBMS IBM DBZ",
+          "DBMS IBM DB2"
+        ],
+        "to": "IBM DB2"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sql server 2008 r2",
+          "Sql Server 2008"
+        ],
+        "to": "Microsoft Sql Server"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Microsoft Sql Server 2012",
+          "Microsoft sql server 2008"
+        ],
+        "to": "Microsoft Sql Server"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dbms oracle",
+          "Rdbms oracle"
+        ],
+        "to": "Oracle"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DBMS Microsoft Sql Server",
+          "RDMS Microsoft SQLServer"
+        ],
+        "to": "Microsoft Sql Server"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Postgres",
+          "Postgresql"
+        ],
+        "to": "Postgresql"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sql Server 2008",
+          "Sql Server 2005"
+        ],
+        "to": "Microsoft Sql Server"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Microsoft Sql Server 2008 R2",
+          "Microsoft sql server 2008"
+        ],
+        "to": "Microsoft Sql Server"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ms access",
+          "Mdb access"
+        ],
+        "to": "Ms access"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "My SQL 5.1.69",
+          "My SQL 5.1.49-3"
+        ],
+        "to": "Mysql"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DBMS IBM DBZ",
+          "DBMS IMB DB2"
+        ],
+        "to": "IBM DB2"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column formato",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "formato",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Microsoft SQL Server",
+          "Microsoft Sql Server"
+        ],
+        "to": "Microsoft SQL Server"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column formato",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "formato",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DB2 AS/400",
+          "DB2 su AS400"
+        ],
+        "to": "DB2 AS/400"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DBMS Lotus Notes",
+          "Lotus Notes"
+        ],
+        "to": " Lotus Notes"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Oracle",
+          "SQL Oracle"
+        ],
+        "to": "Oracle"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sybase",
+          "Dbms sybase"
+        ],
+        "to": "Sybase"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Firebird",
+          "Dbms Firebird"
+        ],
+        "to": "Firebird"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column formato",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "formato",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sql server",
+          "Dbms MS SQL Server",
+          "DBMS QLServer"
+        ],
+        "to": "Microsoft Sql server"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column formato",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "formato",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Microsoft SQL Server",
+          "Microsoft Sql server"
+        ],
+        "to": "Microsoft SQL Server"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column formato",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "formato",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DBMS Sql"
+        ],
+        "to": "Sql"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column formato",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "formato",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ms access"
+        ],
+        "to": "Microsoft access"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column formato",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "formato",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "POSTRESQL"
+        ],
+        "to": "Postgresql"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column formato",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "formato",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DBMS Sql Server 2005"
+        ],
+        "to": "Microsoft Sql Server"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column formato",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "formato",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Microsoft Sql Server"
+        ],
+        "to": "Microsoft SQL Server"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column prodotto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "prodotto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CONTABILITA' ECONOMICA",
+          "Contabilità economica",
+          "Contabilità Economica"
+        ],
+        "to": "Contabilità economica"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sistema password",
+          "SISTEMA PASSWORD"
+        ],
+        "to": "Sistema password"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DENARO OSPITI",
+          "Denaro ospiti"
+        ],
+        "to": "Denaro ospiti"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Magazzino",
+          "MAGAZZINO"
+        ],
+        "to": "Magazzino"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rilevazione presenze",
+          "RILEVAZIONE PRESENZE"
+        ],
+        "to": "Rilevazione presenze"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CONTABILITA' OSPITI",
+          "Contabilità ospiti"
+        ],
+        "to": "Contabilità ospiti"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Protocollo",
+          "PROTOCOLLO"
+        ],
+        "to": "Protocollo"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CASSA ECONOMATO",
+          "Cassa economato"
+        ],
+        "to": "Cassa economato"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BUDGET",
+          "Budget"
+        ],
+        "to": "Budget"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column prodotto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "prodotto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CONTABILITA' ANALITICA",
+          "Contabilità analitica",
+          "CONTABILITÀ ANALITICA"
+        ],
+        "to": "Contabilità analitica"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "-",
+          "???"
+        ],
+        "to": ""
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Inventario beni",
+          "INVENTARIO BENI"
+        ],
+        "to": "Inventario beni"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GESTIONE OSPITI",
+          "Gestione ospiti"
+        ],
+        "to": "Gestione ospiti"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Galileo",
+          "GALILEO"
+        ],
+        "to": "Galileo"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CONTABILITA' FINANZIARIA",
+          "Contabilità finanziaria"
+        ],
+        "to": "Contabilità finanziaria"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gestione Cespiti",
+          "Gestione cespiti"
+        ],
+        "to": "Gestione cespiti"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column prodotto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "prodotto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dnlab",
+          "DNLAB",
+          "DN-LAB",
+          "DNLab"
+        ],
+        "to": "Dnlab"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AdtWeb",
+          "ADTWeb",
+          "ADTweb"
+        ],
+        "to": "AdtWeb"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CONTROLLO DI GESTIONE",
+          "Controllo di Gestione"
+        ],
+        "to": "Controllo di Gestione"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Oliamm",
+          "OLIAMM"
+        ],
+        "to": "Oliamm"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PRIAMO",
+          "Priamo"
+        ],
+        "to": "Priamo"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Screening",
+          "SCREENING"
+        ],
+        "to": "Screening"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cartella Socio Sanitaria",
+          "CARTELLA SOCIO - SANITARIA"
+        ],
+        "to": "Cartella Socio Sanitaria"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DELIBERE",
+          "Delibere"
+        ],
+        "to": "Delibere"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ordini Fornitori",
+          "ORDINI FORNITORI"
+        ],
+        "to": "Ordini fornitori"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gepadial",
+          "GEPADIAL"
+        ],
+        "to": "Gepadial"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PACS",
+          "Pacs"
+        ],
+        "to": "Pacs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WHR",
+          "Whr"
+        ],
+        "to": "Whr"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Powerlab",
+          "POWERLAB"
+        ],
+        "to": "Powerlab"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Archiflow",
+          "ARCHIFLOW"
+        ],
+        "to": "Archiflow"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Psiche",
+          "PSICHE"
+        ],
+        "to": "Psiche"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Winsap",
+          "WINSAP"
+        ],
+        "to": "Winsap"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Firstaid",
+          "FirstAid"
+        ],
+        "to": "Firstaid"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column prodotto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "prodotto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ASTER",
+          "Aster",
+          "AS.TER."
+        ],
+        "to": "Aster"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RISolution",
+          "Risolution",
+          "RISOLUTION"
+        ],
+        "to": "RISolution"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dnweb",
+          "DN-Web",
+          "DNWEB"
+        ],
+        "to": "Dnweb"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WinLab",
+          "WINLAB",
+          "Winlab"
+        ],
+        "to": "WinLab"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Jobtime",
+          "JobTime"
+        ],
+        "to": "Jobtime"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Eurotouch",
+          "EUROTOUCH"
+        ],
+        "to": "Eurotouch"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cespiti",
+          "CESPITI"
+        ],
+        "to": "Cespiti"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cedap",
+          "CEDAP"
+        ],
+        "to": "Cedap"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TAONET",
+          "Taonet"
+        ],
+        "to": "Taonet"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Suite HR",
+          "HR Suite"
+        ],
+        "to": "Suite HR"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CONTABILITA' UTENTI",
+          "CONTABILITÀ UTENTI"
+        ],
+        "to": "CONTABILITA' UTENTI"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Stipendi Web",
+          "Stipendi web"
+        ],
+        "to": "Stipendi Web"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column prodotto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "prodotto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Registro Tumori",
+          "REGISTRO TUMORI",
+          "Registro tumori"
+        ],
+        "to": "Registro Tumori"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MP-SOLUTION",
+          "MPSolution",
+          "Mpsolution"
+        ],
+        "to": "MP SOLUTION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "VISITE FISCALI",
+          "Visite Fiscali",
+          "Visite fiscali"
+        ],
+        "to": "Visite fiscali"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DN-Territorio",
+          "DNTerritorio",
+          "Dnterritorio"
+        ],
+        "to": "DNTerritorio"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gst",
+          "GST"
+        ],
+        "to": "GST"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TD-Sinergy",
+          "TDSInergy"
+        ],
+        "to": "TD Sinergy"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gestione Ospiti e Lista d'attesa",
+          "Gestione ospiti e lista d'attesa"
+        ],
+        "to": "Gestione ospiti e lista d'attesa"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CETRAPLUS WEB",
+          "Cetraplus WEB"
+        ],
+        "to": "Cetraplus WEB"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HeGos",
+          "Hegos"
+        ],
+        "to": "Hegos"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "VaccinazioniWeb",
+          "VaccinazioniWEB"
+        ],
+        "to": "VaccinazioniWeb"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ECWMED",
+          "Ecwmed"
+        ],
+        "to": "Ecwmed"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Eliot",
+          "ELIOT"
+        ],
+        "to": "Eliot"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SISWEB",
+          "SisWeb"
+        ],
+        "to": "SisWeb"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Millewin",
+          "MILLEWIN"
+        ],
+        "to": "Millewin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cred.NET",
+          "CredNet"
+        ],
+        "to": "CredNet"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "UAM",
+          "Uam"
+        ],
+        "to": "Uam"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "E-Scribe",
+          "Escribe"
+        ],
+        "to": "Escribe"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dicomed Pacs",
+          "DICOMED PACS"
+        ],
+        "to": "Dicomed Pacs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MFP",
+          "MFp"
+        ],
+        "to": "MFP"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Formazione",
+          "FORMAZIONE"
+        ],
+        "to": "Formazione"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DB Gestione delibere",
+          "DB Gestione Delibere"
+        ],
+        "to": "DB Gestione delibere"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Wincare",
+          "WINCARE"
+        ],
+        "to": "Wincare"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Portale Referti",
+          "Portale referti"
+        ],
+        "to": "Portale referti"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Iriswin",
+          "IrisWin"
+        ],
+        "to": "IrisWin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "First Aid",
+          "FIRST AID"
+        ],
+        "to": "First Aid"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ASP SERVICES",
+          "ASP Services"
+        ],
+        "to": "ASP Services"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MyStar",
+          "Mystar"
+        ],
+        "to": "MyStar"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SPID.EXE",
+          "Spid.exe"
+        ],
+        "to": "Spid.exe"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "G.u.r.u.",
+          "GURU"
+        ],
+        "to": "GURU"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Proteus",
+          "PROTEUS"
+        ],
+        "to": "Proteus"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WEBREF",
+          "WebRef"
+        ],
+        "to": "WebRef"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GESTDIAL",
+          "GestDial"
+        ],
+        "to": "GestDial"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ReportMed",
+          "ReportMED"
+        ],
+        "to": "ReportMed"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GestAMB",
+          "GestAmb"
+        ],
+        "to": "GestAmb"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ADCWeb",
+          "AdCweb"
+        ],
+        "to": "AdCweb"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GALENUS",
+          "Galenus"
+        ],
+        "to": "Galenus"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MOD. 770",
+          "MOD 770"
+        ],
+        "to": "MOD 770"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AREAS",
+          "Areas"
+        ],
+        "to": "Areas"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RILPRES",
+          "Ril.Pres."
+        ],
+        "to": "Ril.Pres."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OSLO",
+          "Oslo"
+        ],
+        "to": "Oslo"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WebCare",
+          "Webcare"
+        ],
+        "to": "Webcare"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SCRYBA",
+          "Scryba"
+        ],
+        "to": "Scryba"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CARTELLA SOCIO SANITARIA (CSS)",
+          "CSS (cartella socio sanitaria)"
+        ],
+        "to": "cartella socio sanitaria"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PORTALE WEB",
+          "Portale web"
+        ],
+        "to": "Portale web"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Medware",
+          "MEDWARE"
+        ],
+        "to": "Medware"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "QUADRIFOGLIO",
+          "Quadrifoglio"
+        ],
+        "to": "Quadrifoglio"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OPENWORK",
+          "Openwork"
+        ],
+        "to": "Openwork"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PsWEB",
+          "Psweb"
+        ],
+        "to": "Psweb"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "REGISTRO OPERATORIO",
+          "Registro Operatorio"
+        ],
+        "to": "Registro Operatorio"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cartelle Cliniche",
+          "Cartelle cliniche"
+        ],
+        "to": "Cartelle cliniche"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "FILEF",
+          "FileF"
+        ],
+        "to": "FileF"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Health Portal",
+          "Health portal"
+        ],
+        "to": "Health portal"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ONCOSYS",
+          "Oncosys"
+        ],
+        "to": "Oncosys"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WinLab Web",
+          "Winlab Web"
+        ],
+        "to": "Winlab Web"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ScreeningWeb",
+          "ScreeningWEB"
+        ],
+        "to": "ScreeningWeb"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CameliaWeb",
+          "CameliaWEB"
+        ],
+        "to": "CameliaWeb"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Piani terapeutici",
+          "PIANI TERAPEUTICI"
+        ],
+        "to": "Piani terapeutici"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column prodotto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "prodotto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cartella Socio Sanitaria",
+          "cartella socio sanitaria"
+        ],
+        "to": "cartella socio sanitaria"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Verbena",
+          "VERBENA"
+        ],
+        "to": "Verbena"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column prodotto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "prodotto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ormaweb",
+          "ORMA WEB"
+        ],
+        "to": "Ormaweb"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AdtWeb",
+          "ADT Web"
+        ],
+        "to": "AdtWeb"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MyStarConnect",
+          "MY STAR CONNECT"
+        ],
+        "to": "MyStarConnect"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "IrisWin",
+          "Iris win"
+        ],
+        "to": "IrisWin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sito Web",
+          "SitoWeb"
+        ],
+        "to": "Sito Web"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SVAMA/SVM",
+          "SVAMA / SVM"
+        ],
+        "to": "SVAMA/SVM"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GALILEONT",
+          "Galileo NT"
+        ],
+        "to": "Galileo NT"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pensioni s7",
+          "PensioniS7"
+        ],
+        "to": "PensioniS7"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LAPIS WEB",
+          "Lapisweb"
+        ],
+        "to": "Lapisweb"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TALETE WEB",
+          "TaleteWeb"
+        ],
+        "to": "TaleteWeb"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Human Care",
+          "Humancare"
+        ],
+        "to": "Humancare"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Order Entry",
+          "OrderEntry"
+        ],
+        "to": "OrderEntry"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Health Portal - Patenti",
+          "HealthPortal - Patenti"
+        ],
+        "to": "HealthPortal - Patenti"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Firstaid",
+          "First Aid"
+        ],
+        "to": "First Aid"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SVAMA / SVM / FAR",
+          "SVAMA/SVM/FAR"
+        ],
+        "to": "SVAMA/SVM/FAR"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RID/MAV",
+          "RID / MAV"
+        ],
+        "to": "RID/MAV"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Spago BI",
+          "SPAGOBI"
+        ],
+        "to": "SpagoBI"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Avelco web",
+          "Avelcoweb"
+        ],
+        "to": "Avelcoweb"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CameliaWeb",
+          "Camelia Web"
+        ],
+        "to": "CameliaWeb"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column prodotto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "prodotto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CSS (cartella clinica)",
+          "CSS(cartella clinica)"
+        ],
+        "to": "cartella socio sanitaria"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Butterfly WEB",
+          "ButterflyWEB"
+        ],
+        "to": "ButterflyWEB"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column prodotto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "prodotto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Inventario beni",
+          "IINVENTARIO BENI"
+        ],
+        "to": "Inventario beni"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Stipendi",
+          "Sipendi"
+        ],
+        "to": "Stipendi"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column prodotto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "prodotto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gestione ospiti",
+          "GETIONE OSPITI"
+        ],
+        "to": "Gestione ospiti"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column prodotto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "prodotto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GESTIONE OSPITI E LISTE D'ATTESA",
+          "Gestione ospiti e lista d'attesa"
+        ],
+        "to": "Gestione ospiti e lista d'attesa"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column prodotto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "prodotto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Contabilità economica",
+          "CINTABILITA' ECONOMICA"
+        ],
+        "to": "Contabilità economica"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Spid spa",
+          "Spid S.p.a.",
+          "Spid. S.p.a."
+        ],
+        "to": "Spid spa"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Meteda srl",
+          "Me.Te.Da s.r.l.",
+          "Me.Te.Da. s.r.l."
+        ],
+        "to": "Meteda srl"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Noemalife spa",
+          "Noemalife s.p.a.",
+          "Noemalife S.p.a"
+        ],
+        "to": "Noemalife spa"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GPI s.p.a.",
+          "Gpi Spa",
+          "G.P.I. S.p.a."
+        ],
+        "to": "GPI s.p.a."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "-",
+          "???"
+        ],
+        "to": ""
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Esaote S.p.a.",
+          "Esaote Spa"
+        ],
+        "to": "Esaote Spa"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Alder srl",
+          "Alder s.r.l"
+        ],
+        "to": "Alder srl"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Meteda",
+          "Me.Te.Da"
+        ],
+        "to": "Meteda"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Santer - Reply S.p.A.",
+          "Santer Reply spa"
+        ],
+        "to": "Santer Reply spa"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Invisiblefarm S.r.l.",
+          "Invisiblefarm srl"
+        ],
+        "to": "Invisiblefarm srl"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Infoline",
+          "Info-line"
+        ],
+        "to": "Infoline"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Insiel spa",
+          "Insiel s.p.a."
+        ],
+        "to": "Insiel spa"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dedalus s.p.a.",
+          "Dedalus spa"
+        ],
+        "to": "Dedalus spa"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "INSOFT s.r.l.",
+          "Insoft srl"
+        ],
+        "to": "Insoft srl"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Infoline srl",
+          "Info-line S.r.l."
+        ],
+        "to": "Infoline"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Millenium S.r.l.",
+          "Millenium srl"
+        ],
+        "to": "Millenium srl"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Engineering ingegneria informatica s.p.a.",
+          "Engineering Ingegneria Informatica spa"
+        ],
+        "to": "Engineering spa"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Info Line srl",
+          "Info line S.r.l."
+        ],
+        "to": "Info line S.r.l."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Windex srl",
+          "Windex s.r.l."
+        ],
+        "to": "Windex srl"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cba informatica s.r.l.",
+          "Cba informatica srl"
+        ],
+        "to": "Cba informatica srl"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bim Italia s.r.l.",
+          "Bim Italia srl"
+        ],
+        "to": "Bim Italia srl"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BCS srl",
+          "BCS s.r.l."
+        ],
+        "to": "BCS srl"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Oslo srl",
+          "OSLO s.r.l."
+        ],
+        "to": "Oslo srl"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Reply S.p.A.",
+          "Reply spa"
+        ],
+        "to": "Reply spa"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RTI (Engineering.mo, AICOF, CGM)",
+          "RTI Engineering-mo, AICOF, CGM"
+        ],
+        "to": "RTI (Engineering.mo, AICOF, CGM)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Tekne snc",
+          "TEKNE S.n.c."
+        ],
+        "to": "Tekne snc"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Inps",
+          "I.N.P.S."
+        ],
+        "to": "Inps"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Santer Reply",
+          "Santer - Reply"
+        ],
+        "to": "Santer Reply"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Elco srl",
+          "El.Co. S.r.l."
+        ],
+        "to": "Elco srl"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sigma Informatica s.p.a",
+          "Sigma Informatica spa"
+        ],
+        "to": "Sigma Informatica spa"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Praezision life srl",
+          "Praezision Life s.r.l."
+        ],
+        "to": "Praezision life srl"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ciditech s.r.l.",
+          "Ciditech srl"
+        ],
+        "to": "Ciditech srl"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Iasi s.r.l.",
+          "Iasi s.rl."
+        ],
+        "to": "Iasi s.rl."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "G.P.I.",
+          "GPI"
+        ],
+        "to": "GPI"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Data Processing S.p.a.",
+          "Data Processing Spa"
+        ],
+        "to": "Data Processing Spa"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Engineering spa",
+          "Engineering s.p.a."
+        ],
+        "to": "Engineering spa"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Informatica Alto Adige",
+          "Informatica aAlto Adige"
+        ],
+        "to": "Informatica Alto Adige"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Santer Reply",
+          "Santer-Reply"
+        ],
+        "to": "Santer Reply"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Noemalife",
+          "Noema Life"
+        ],
+        "to": "Noemalife"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Praezision-life",
+          "Praezision LIFE"
+        ],
+        "to": "Praezision life"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ebit Aet",
+          "EBIT-AET"
+        ],
+        "to": "Ebit Aet"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Azienda USL Umbria 1",
+          "Azienda USL Umbria1"
+        ],
+        "to": "Azienda USL Umbria 1"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Insiel mercato",
+          "Insielmercato"
+        ],
+        "to": "Insiel mercato"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cba Informatica s.r.l. viale Trento, n. 56 - 38068 Rovereto (TN) P.IVA 01854700224"
+        ],
+        "to": "Cba Informatica"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cba Informaticva S.r.l."
+        ],
+        "to": "Cba Informatica"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cba informatica srl"
+        ],
+        "to": "Cba informatica"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cba Informatica"
+        ],
+        "to": "Cba informatica"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Regione Lombardia ha dato mandato alla società in-house Lombardia Informatica lo sviluppo e la manutenzione dell'applicativo."
+        ],
+        "to": "Lombardia Informatica"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Engineering spa"
+        ],
+        "to": "Engineering"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Noemalife spa"
+        ],
+        "to": "Noemalife"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dedalus spa"
+        ],
+        "to": "Dedalus"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Elco srl"
+        ],
+        "to": "Elco"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Data Processing Via del Lavoro, 17 40127 Bologna"
+        ],
+        "to": "Data Processing"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Avelco WEB Srl"
+        ],
+        "to": "Avelco"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Beta80 Spa"
+        ],
+        "to": "Beta80"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Carestream health"
+        ],
+        "to": "Carestream"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Carestream spa"
+        ],
+        "to": "Carestream"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Caribel Programmazione S.r.l."
+        ],
+        "to": "Caribel Programmazione"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Caribel"
+        ],
+        "to": "Caribel Programmazione"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CARIBEL Programmazione Srl - Ospedaletto (PI)"
+        ],
+        "to": "Caribel Programmazione"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Caribel s.r.l."
+        ],
+        "to": "Caribel Programmazione"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CBIM - Consorzio di Bioingegneria e Informatica Medica"
+        ],
+        "to": "CBIM"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Data Processing"
+        ],
+        "to": "Data processing"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DATA PROCESSING Bologna"
+        ],
+        "to": "Data processing"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Data Processing Spa"
+        ],
+        "to": "Data processing"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DB Informatic@ srl"
+        ],
+        "to": "DB Informatica"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DB informatica srl"
+        ],
+        "to": "DB Informatica"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dedalus – Avelco"
+        ],
+        "to": "Dedalus"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dedalus – Eurosoft"
+        ],
+        "to": "Dedalus"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dedalus – Sago"
+        ],
+        "to": "Dedalus"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dedalus-Avelco"
+        ],
+        "to": "Dedalus"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dedalus S.p.A. - Firenze"
+        ],
+        "to": "Dedalus"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dedalus-Sago"
+        ],
+        "to": "Dedalus"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dedalus, LifeScan"
+        ],
+        "to": "Dedalus"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Delta informatica"
+        ],
+        "to": "Delta informatica"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Delta Informatica srl"
+        ],
+        "to": "Delta informatica"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Engeenering"
+        ],
+        "to": "Engineering"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Engennering"
+        ],
+        "to": "Engineering"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Engineering Ingegneria Informatica spa Strada 1 palazzo D/3 - Centro Direzionale Milanofiori - 20090 Assago (Mi)"
+        ],
+        "to": "Engineering"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Engineering Sanità"
+        ],
+        "to": "Engineering"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Engineering Spa Milano"
+        ],
+        "to": "Engineering"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Enginering"
+        ],
+        "to": "Engineering"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ENGINERING s.p.a."
+        ],
+        "to": "Engineering"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Enginnering.IT spa"
+        ],
+        "to": "Engineering"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Enginnering"
+        ],
+        "to": "Engineering"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lombardia Informatica",
+          "Lombardia informatica"
+        ],
+        "to": "Lombardia informatica"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GE Healthcare",
+          "GE Healtcare"
+        ],
+        "to": "GE Healtcare"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Giada progetti",
+          "Giada Pogetti"
+        ],
+        "to": "Giada progetti"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Laserbiomed",
+          "Laserbiomend"
+        ],
+        "to": "Laserbiomed"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Siav s.p.a.",
+          "SIAV S.r.l."
+        ],
+        "to": "Siav"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "UMS - unioted medical software",
+          "UMS-United medical software"
+        ],
+        "to": "UMS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pegaso 2000 S.p.A.",
+          "Pegaso 2000 s.r.l."
+        ],
+        "to": "Pegaso 2000"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Traccia",
+          "LaTraccia"
+        ],
+        "to": "Traccia"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Solari Udine spa",
+          "Solari di Udine spa"
+        ],
+        "to": "Solari Udine"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "UMS _united medical Softaware",
+          "UMS-United medical software"
+        ],
+        "to": "UMS"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Solari Udine",
+          "Solari di Udine"
+        ],
+        "to": "Solari Udine"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Santer Reply",
+          "Santer"
+        ],
+        "to": "Santer Reply"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Reply/Santer",
+          "Santer"
+        ],
+        "to": "Santer Reply"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "FujiFilm Spa",
+          "FujiFilm"
+        ],
+        "to": "FujiFilm"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CSAmed",
+          "CSAmed srl"
+        ],
+        "to": "CSAmed"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Selesta ingegneria",
+          "Selesta ingegneria SPA"
+        ],
+        "to": "Selesta ingegneria"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Insiel",
+          "Insiel spa"
+        ],
+        "to": "Insiel"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SoftwareUno Ins",
+          "SoftwareUno"
+        ],
+        "to": "SoftwareUno"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Santer Reply",
+          "Santer Reply spa"
+        ],
+        "to": "Santer Reply"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NOEMALIFE Bologna",
+          "Noemalife SpA Bologna"
+        ],
+        "to": "Noemalife"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Windex srl",
+          "Windex"
+        ],
+        "to": "Windex"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Meteda",
+          "Meteda srl"
+        ],
+        "to": "Meteda"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Tekne snc",
+          "TEKNE S.r.l"
+        ],
+        "to": "Tekne"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Praezision life srl",
+          "Praezision life"
+        ],
+        "to": "Praezision life"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GPI s.p.a. di Trento",
+          "GPI Spa - Trento"
+        ],
+        "to": "GPI"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Laserbiomed",
+          "Laserbiomed Srl"
+        ],
+        "to": "Laserbiomed"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Siemens",
+          "Siemens Spa"
+        ],
+        "to": "Siemens"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Praezision life",
+          "Praezision"
+        ],
+        "to": "Praezision"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Invisiblefarm",
+          "Invisiblefarm srl"
+        ],
+        "to": "Invisiblefarm"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Exprivia Spa",
+          "Exprivia"
+        ],
+        "to": "Exprivia"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Esaote Spa",
+          "ESAOTE EBIT"
+        ],
+        "to": "Esaote"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cooperativa \"La Traccia\"",
+          "Cooperativa edp la traccia"
+        ],
+        "to": "La Traccia"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Infocert",
+          "Infocert Spa"
+        ],
+        "to": "Infocert"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Insiel mercato",
+          "Insiel mercato spa"
+        ],
+        "to": "Insiel mercato"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "La Traccia",
+          "Traccia"
+        ],
+        "to": "La Traccia"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Santer Reply",
+          "Santer Replay-SAS"
+        ],
+        "to": "Santer Reply"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Praezision life",
+          "Praezision"
+        ],
+        "to": "Praezision life"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "La Traccia srl",
+          "La Traccia"
+        ],
+        "to": "La Traccia"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ciditech",
+          "Ciditech srl"
+        ],
+        "to": "Ciditech"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dedagroup",
+          "Dedagroup spa"
+        ],
+        "to": "Dedagroup"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NOEMALIFE/SERVICELIFE"
+        ],
+        "to": "Noemalife"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Noemalife"
+        ],
+        "to": "Noemalife"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NoemaLife S.p.A. Piazza Duca d’Aosta, 12 20124 Milano – ITALY"
+        ],
+        "to": "Noemalife"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Esakon Snc di Italo Parolari e Roberto Betta"
+        ],
+        "to": "Esakon"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Esakon snc"
+        ],
+        "to": "Esakon"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ESAKON s.n.c. di I. Parolari e R. Betta"
+        ],
+        "to": "Esakon"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fuji",
+          "Fjui"
+        ],
+        "to": "Fuji"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LISPA Spa",
+          "Lispa"
+        ],
+        "to": "Lispa"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sigma Informatica",
+          "Sigma Informatica spa"
+        ],
+        "to": "Sigma Informatica"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Instrumentation Laboratory",
+          "Instrumentation Laboratory S.p.a."
+        ],
+        "to": "Instrumentation Laboratory"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Roche",
+          "Roche s.p.a."
+        ],
+        "to": "Roche"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Istituto Mario Negri",
+          "Mario Negri"
+        ],
+        "to": "Istituto Mario Negri"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Progetti d'Impresa srl",
+          "Progetti di Impresa srl - Modena"
+        ],
+        "to": "Progetti d'Impresa srl"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Infor",
+          "Infor srl"
+        ],
+        "to": "Infor"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mondo edp",
+          "Mondo edp s.r.l."
+        ],
+        "to": "Mondo edp"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sined",
+          "Sined s.r.l."
+        ],
+        "to": "Sined"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "EB Neuro s.p.a.",
+          "EB Neuro"
+        ],
+        "to": "EB Neuro"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Micra S.r.l."
+        ],
+        "to": "Micra"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Microsoft Italia Srl"
+        ],
+        "to": "Microsoft"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Insiel mercato"
+        ],
+        "to": "Insiel"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Insiel Mercato SpA AREA Science Park – Padriciano 99 – 34149 Trieste"
+        ],
+        "to": "Insiel"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Intersystems corporation"
+        ],
+        "to": "Intersystems"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "METEDA Via Silvio Pellico, 4 63074 San Benedetto del Tr. (AP)"
+        ],
+        "to": "Meteda"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Millennium S.r.l. Gruppo Dedalus"
+        ],
+        "to": "Millennium"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Millenium srl"
+        ],
+        "to": "Millenium"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Millennium"
+        ],
+        "to": "Millenium"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mondo EDP S.r.l Cuneo"
+        ],
+        "to": "Mondo edp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mortara Rangoni"
+        ],
+        "to": "Mortara"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NORDCOM"
+        ],
+        "to": "NordCom"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NordCom S.p.A."
+        ],
+        "to": "NordCom"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Nordcom Spa Milano"
+        ],
+        "to": "Nordcom"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Nordcom"
+        ],
+        "to": "NordCom"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Oracle Italia Srl"
+        ],
+        "to": "Oracle"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OSLO Olivetti Sanità Lombardia"
+        ],
+        "to": "Oslo"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Oslo srl"
+        ],
+        "to": "Oslo"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Oslo Srl - Milano"
+        ],
+        "to": "Oslo"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Philips"
+        ],
+        "to": "Philips"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PHILIPS  S.p.A."
+        ],
+        "to": "Philips"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "POLISYSTEM INFORMATICA S.r.l."
+        ],
+        "to": "Polisystem"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Polisystem Informatica Srl - Rovigo"
+        ],
+        "to": "Polisystem"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Praezision Life S.r.l. / £M"
+        ],
+        "to": "Praezision life"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Praezision Srl - Bodio Lomnago (VA)"
+        ],
+        "to": "Praezision life"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Santer Reply S.p.a. - Milano"
+        ],
+        "to": "Santer Reply"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Selesta"
+        ],
+        "to": "Selesta ingegneria"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sistemaintranet.com Snc - Porto Mantovano (MN)"
+        ],
+        "to": "Sistemaintranet.com"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SISTEMAINTRANET.COM S.n.c."
+        ],
+        "to": "Sistemaintranet.com"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SISTEMAINTRANET.COM DI LUCA MORISI E ANDREA PAGANELLA S.N.C."
+        ],
+        "to": "Sistemaintranet.com"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column produttore",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "produttore",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Softec S.p.A. http://www.softecspa.com P.IVA 01309040473"
+        ],
+        "to": "Softec"
+      }
+    ]
+  }
+]

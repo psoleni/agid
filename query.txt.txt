@@ -1,0 +1,32 @@
+SELECT 
+	tipi_amministrazioni.codice_tipologia as codice_tipologia,
+	localizzazioni.provincia as provincia,
+	localizzazioni.regione as regione,
+	soggetti.denominazione as soggetto,
+	formati.formato as formato,
+	prodotti.titolo as prodotto,
+	produttori.nome as produttore
+	  
+FROM 
+	pa.amministrazioni, 
+	pa.tipi_amministrazioni, 
+	pa.applicativi, 
+	pa.basi_dati, 
+	pa.soggetti, 
+	pa.tipi_licenze_app, 
+	pa.produttori, 
+	pa.prodotti, 
+	pa.localizzazioni, 
+	pa.formati
+WHERE 
+	amministrazioni.codice_ipa = basi_dati.codice_ipa AND
+	amministrazioni.codice_localizzazione = localizzazioni.codice_localizzazione AND
+	tipi_amministrazioni.codice_tipologia = amministrazioni.codice_tipologia AND
+	applicativi.codice_bd = basi_dati.codice_bd AND
+	applicativi.codice_prodotto = prodotti.codice_prodotto AND
+	applicativi.codice_licenza_app = tipi_licenze_app.codice_licenza_app AND
+	basi_dati.codice_formato = formati.codice_formato AND
+	basi_dati.codice_soggetto = soggetti.codice_soggetto AND
+	produttori.codice_produttore = prodotti.codice_produttore
+	AND 
+	tipi_amministrazioni.codice_tipologia in ('C7','L34','L22','L7','L8')

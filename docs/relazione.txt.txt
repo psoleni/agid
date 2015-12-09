@@ -1,0 +1,159 @@
+analisi dati socio sanitari
+
+
+
+Estrazione dei dati
+
+La presente indagine riguarda i dati delle Amministrazioni relative all'area Socio Sanitaria.
+La versione del database utilizzata per l'analisi è quella precedente alla versione 3. I dati relativi sono stati comunque travasati anche nel nuovo database, pertanto i risultati esposti nell'analisi sono indipendenti rispetto alla versione dello schema di database impiegato.
+La query di estrazione ovviamente invece dipende dallo schema. Per l'estrazione è stata elaborata una join fra le tabelle di amministrazioni, tipi_amministrazioni, applicativi, basi_dati, soggetti, produttori, prodotti, localizzazioni, formati. 
+Poiché l'indagine riguarda le Amministrazioni dell'area socio sanitaria, sono state estratte tutte e sole le basi dati relative alle seguenti tipologie di Amministrazioni:
+
+L22: Agenzie Regionali Sanitarie
+L8 : Aziende Ospedaliere, Aziende Ospedaliere Universitarie, Policlinici e Istituti di Ricovero e Cura a Carattere Scientifico Pubblici
+L34: Aziende Pubbliche di Servizi alla Persona"
+L7 :Aziende Sanitarie Locali
+C7 :Enti Pubblici Produttori di Servizi Assistenziali, Ricreativi e Culturali
+
+
+
+Operazioni preliminari
+
+Come altrove già illustrato negli articoli precedenti di questo blog, i dati presenti nel Catalogo sono caratterizzati da una vasta disomogeneità e dispersione.
+Pertanto, propedeutico alla analisi, è stato compiuto un lavoro di pulizia e aggregazione di dati per limitare soprattutto la dispersione nei livelli delle variabili categoriali.
+In particolare, le variabili ripulite sono relative al nome di prodotto, produttore, tipo di formato e soggetto afferente.
+Non potendo utilizzare delle metodologie completamente automatiche, data la estensiva variabilità delle stringhe di dati, e nell'intento di effettuare degli accorpamenti di stringhe non solo in base alle loro caratteristiche puramente lessicali/sintattiche, ma anche in parte semantiche (volendo accorpare laddove possibile rappresentazioni alternative dello stesso concetto in forme diverse), è stato impiegato un approccio semi-supervisionato, attraverso l'ausilio di algoritmi di clusterizzazione per suggerire i possibili accorpamenti, che poi avvenivano applicati tramite esplicita autorizzazione/supervisione per l'attribuzione del cluster ritenuto più corretto.
+Gli algoritmi utilizzati sono sostanzialmente di due categorie: 
+- algoritmi basati su un fingerprinting e key collision, ovvero sulla proprietà di stringhe divese di corrispondere ad uno stesso valore tramite una funzione di trasformazione che elimina le differenze dovute ad uso di caratteri maiuscoli/minuscoli/accentati, spazi, inversioni di parole, ecc.
+- algoritmi basati sulla distanza di similarità fra stringhe, ovvero sul numero di trasformazioni che sarebbero necessarie per raggiungere la completa corrispondenza delle stringhe di partenza.
+
+Il tool utilizzato per semplificare queste operazioni è Open Refine (ex Google Refine). Si tratta di uno strumento open source e liberamente disponibile, che consente di eseguire operazioni di cleansing dei dati in modo semi-automatico, secondo i criteri esposti.
+
+Attraverso l'impiego di queste tecniche sono stati raggiunti i seguenti risultati, relativamente ad i campi selezionati: 
+
+soggetti: da 74 a 67 (riduzione del 9,45%);
+formati: da 148 a 77 (riduzione del 47,97%);
+nome dei prodotti: da 1232 a 1087 (riduzione del 11,77%);
+nome dei produttori: da 576 a 446(riduzione del 22,57%);
+
+In particolare, per quanto riguarda la contrazione più significativa, vale la pena sottolineare che essa è stata possibile anche per la scelta di accorpare elementi di diversa versione in un unico cluster (es. Oracle X, Oracle 11 sono entrati tutti nel cluster "Oracle"), oltre a quanto già premesso relativamente ai raggruppamenti di carattere sintattico e semantico (come nel caso ad esempio di "MS SQL Server", "Microsoft sql server", "RDBMS Microsoft SQL Server")
+
+
+
+Analisi
+
+L'indagine è stata svolta utilizzando l'ambiente software R, liberamente disponibile, pensato per effettuare indagini statistiche e grafiche.
+
+Consistenza del dataset rispetto ai dati complessivi
+
+Il primo elemento in evidenza riguarda la consistenza dei dati presi in esame rispetto al catalogo AgID.
+L'estrazione tramite la query di partenza: 
+
+SELECT 
+	tipi_amministrazioni.codice_tipologia as codice_tipologia,
+	localizzazioni.provincia as provincia,
+	localizzazioni.Regione as Regione,
+	soggetti.denominazione as soggetto,
+	formati.formato as formato,
+	prodotti.titolo as prodotto,
+	produttori.nome as produttore
+	  
+FROM 
+	pa.amministrazioni, 
+	pa.tipi_amministrazioni, 
+	pa.applicativi, 
+	pa.basi_dati, 
+	pa.soggetti, 
+	pa.tipi_licenze_app, 
+	pa.produttori, 
+	pa.prodotti, 
+	pa.localizzazioni, 
+	pa.formati
+WHERE 
+	amministrazioni.codice_ipa = basi_dati.codice_ipa AND
+	amministrazioni.codice_localizzazione = localizzazioni.codice_localizzazione AND
+	tipi_amministrazioni.codice_tipologia = amministrazioni.codice_tipologia AND
+	applicativi.codice_bd = basi_dati.codice_bd AND
+	applicativi.codice_prodotto = prodotti.codice_prodotto AND
+	applicativi.codice_licenza_app = tipi_licenze_app.codice_licenza_app AND
+	basi_dati.codice_formato = formati.codice_formato AND
+	basi_dati.codice_soggetto = soggetti.codice_soggetto AND
+	produttori.codice_produttore = prodotti.codice_produttore
+	AND 
+	tipi_amministrazioni.codice_tipologia in ('C7','L34','L22','L7','L8')
+
+
+	restituisce 3117 record. Il catalogo presenta 159448 entries, pertanto la percentuale rappresentata è relativamente esigua, come visibile nella figura sottostante.
+	
+	
+	
+Pertinenza geografica dei dataset rispetto alle amministrazioni
+
+Un'altra interessante ed importante caratteristica dei dati in analisi riguarda la sua distribuzione rispetto alle fonti dati originali.
+Attraverso le informazioni di localizzazione delle Amministrazioni, è stato infatti possibile collegare ad ogni base dati del dataset una collocazione geografica. L'aggregazione per Regione e per Provincia, riportata in sovrapposizione nel grafico seguente, suggerisce una forte connotazione del dataset a partire da alcune specifiche Regioni, in particolare dell'Italia Settentrionale.
+Quest'aspetto caratterizza fortemente le altre statistiche, in particolare quelle riconducibili ad una aggregazione per numero di dataset, in quanto gli aspetti di similarità di unità statistiche afferenti allo stesso gruppo di provenienza, presentano delle caratteristiche analoghe.
+Inoltre si osserva come non risulti pervenuta nessuna informazione da alcune intere Regioni.
+
+
+
+Soggetti
+
+Per consentire la visualizazzione del diagramma, è stato necessario accorpare le unità inferiori ad una soglia in un unico gruppo virtuale, etichettato con "Altro". La soglia introdotta che consente una buona visibilità senza togliere evidenza ad i risultati è stata individuata nelle 30 unità (ovvero 30 dataset con stesso soggetto)
+La suddivisione dei soggetti trattati rispecchia l'ambito dell'origine dei dati, presentando una netta prevalenza del soggetto "salute".
+Gli altri soggetti principali riguardano ambiti amministrativi e di gestione del personale.
+
+
+
+Formati
+
+Analogamente a quanto fatto per i soggetti, per visualizzare una rappresentazione della suddivisione dei formati, è stato operato un accorpamento nella categoria "Altro" dei dati relativi a formati aggregati con numero di dataset inferiore alle 30 unità.
+Nella suddivisione dei formati emerge chiaramente la caratterizzazione dovuta alla forte prevalenza dei dataset provenienti da una determinata fonte dati. Infatti, il formato "Firebird", che risulta il più utilizzato, è in realtà relativo ad una suite di prodotti di uno stesso specifico produttore, che -come si vedrà più avanti- è frequentemente associato alle basi dati delle Regioni dell'Italia Settentrionale (che per quanto visto sono quelle che costituiscono la componente di maggioranza del dataset).
+Nella tabella si vede inoltre come i formati generalmente più diffusi (Oracle, Microsoft SQL Server) presentino una distribuzione meno caratterizzata dalla dipendenza diretta da un singolo produttore. 
+
+
+
+Prodotti e produttori
+
+Prodotti: i 10 prodotti più usati per Regione
+
+Per ovviare parzialmente alla distorsione introdotta dalla forte prevalenza nella fonte dati della componente relativa alle Regioni dell'Italia Settentrionale, si è presa in esame la distribuzione dei prodotti in base unicamente alla Regione di appartenenza, estraendo i 10 più importanti (dove possibile) prodotti in utilizzo per ogni Regione, ed ordinandoli inversamente sull'asse delle ordinate in base al numero complessivo di dataset in tutte le Regioni. In basso si vedono quindi i prodotti complessivamente con più dataset in tutte le Regioni, mentre verso l'alto si collocano i prodotti usati meno frequentemente. Sulle ascisse si trovano le Regioni, quindi scorrendo dal basso all'alto la linea relativa ad ogni Regione, si trovano tutti i prodotti usati nella singola Regione.
+Il grafico è interessante perché dimostra anche le similarità fra i gruppi di software più diffusi nelle diverse aree territoriali.
+In particolare, si nota la prevalenza di un gruppo di software presente in Veneto, Trentino Alto Adige, Piemonte, Friuli Venezia Giulia ed Emilia Romagna. Si nota altresì la posizione della Lombardia, che a differenza delle altre Regioni del Nord è dotata di una suite software diversa.
+Per limitare la dispersione del grafico, e rappresentare un congruo numero di prodotti, si è scelto di limitare a 10 il numero di prodotti per Regione da rappresentare. 
+Evidentemente, se alcuni prodotti sono presenti in più Regioni ma il numero di dataset relativo è esiguo, non compare la correlazione nel grafico, che serviva ad individuare le più evidenti correlazioni fra prodotti identici.
+
+Prodotti i 50 più usati per numero di dataset
+
+Questo grafico ci consente di visualizzare i prodotti che a livello nazionale sono più utlizzati, in base al numero di dataset complessivi.
+E' evidente che nella parte bassa del grafico, dove sono collocati i risultati con il maggior numero di dataset, si confermino le presenze dei prodotti relative alle Regioni con il maggior contributo in termini di dataset presenti nel catalogo. In particolare si osserva ancora una volta una marcata prevalenza di un produttore (Cba Informatica) per le Regioni Settentrionali. Fa parzialmente eccezione la Lombardia, che pur utilizzando occasionalmente tali prodotti, è evidentemente dotata di una suite di prodotti particolare. Si può infatti trovare conferma di quest'ipotesi nella (verbosa) descrizione contenuta nel catalogo e relativa al produttore : "Regione Lombardia ha dato mandato alla società in-house Lombardia Informatica lo sviluppo e la manutenzione dell'applicativo".
+E' interessante anche notare che il produttore Noemalife appare in questo grafico con un (relativamente) basso numero di dataset, ma in particolare col prodotto Dnlab in modo trasversale rispetto al territorio nazionale.
+
+Prodotti: i 50 prodotti più diffusi
+
+Per verificare quanto relativo all'ultima osservazione appena appuntata, si è elaborata un'altra rappresentazione della diffusione dei prodotti, stavolta indipendente dal numero di dataset assoluti, e costituita dallo studio della loro copertura, ovvero dalla valutazione del numero di Regioni dove il prodotto è utilizzato almeno una volta.
+Il risultato è quindi indipendente dalla sproporzione dovuta al numero di dataset di alcuni specifici prodotti, e consente di individuare i prodotti con una più vasta diffusione sul territorio.
+Il grafico rappresenta nella parte bassa i prodotti con diffusione più ampia, mentre verso l'alto si collocano i prodotti con minore diffusione: si conferma la presenza, come avevamo marginalmente osservato nel grafico precedente, del produttore Noemalife, con due prodotti distinti; segue poi il blocco dei prodotti di Cba Informatica, già emersa in precedenza per le vaste attribuzioni nelle Regioni Settentrionali. Si notano poi nella parte resetante, scorrendo i nomi dei produttori, alcuni più ricorrenti di altri, in particolare Dedalus ed Engineering.
+
+
+Produttori: i 10 produttori più presenti per Regione
+
+Sulla base delle osservazioni precedenti, in analogia a quanto fatto per i prodotti, si propone un grafico in cui si rappresenta la distribuzione dei prodotti in base unicamente alla Regione di appartenenza, ovvero estraendo per ogni regione i 10 produttori più presenti sul territorio regionale come numero di dataset, ed ordinandoli quindi complessivamente sempre con il criterio del numero di dataset complessivo.
+Si nota come i produttori che avevamo precedente individuato (Cba Informatica, Engineering, Dedalus, Noemalife) siano i più presenti sia per numero di dataset che per copertura. Lombardia Informatica compare in questo gruppo per il vasto numero di dataset attribuiti nella Regione Lombardia.
+Si nota altresì, scorrendo verso l'alto il grafico, una vasta frammentazione, che conferma come al di fuori di questo gruppo consolidato di produttori, ogni Regione abbia probabilmente una situazione a se stante per quel che riguarda la dotazione informatica nel settore in esame.
+
+
+Produttori più diffusi per numero di dataset e i più diffusi per copertura territoriale
+
+Per completare lo studio, si sono elaborati i grafici relativi alla maggior diffusione per numero di dataset e per copertura territoriale.
+E' interessante notare come il gruppo di fornitori individuato (Cba Informatica, Engineering, Dedalus, Noemalife) sia presente sempre nei primi posti di entrambi i tipi di studio.
+Lombardia Informatica, presente fra quelli col maggior numero di dataset, non compare invece nel secondo studio, poiché afferente ad una sola Regione.
+E' interessante inoltre notare come nella Regione Lombardia si annoverino un vasto numero di software, quasi tutti i 20 maggiori a livello nazionale per numero di software e tutti i 20 maggiori fornitori per copertura territoriale. 
+
+
+
+Coperture territoriali dei produttori
+
+A corredo di quest'ultima analisi e a completamento dello studio condotto, si propongono le rappresentazioni territoriali della copertura dei fornitori elencati fra i 20 più diffusi.
+Nel grafico è possibile vedere la coperatura geografica ed il numero di dataset afferente a ciascuna regione, rappresentato dal colore.
+E' interessante il confronto del gruppo di fornitori principali (Cba Informatica, Engineering, Dedalus, Noemalife), che sintetizza quanto già emerso nelle altre analisi, relativamente alla vasta copertura territoriale di Engineering, Dedalus, Noemalife, e della consolidata presenza di Cba Informatica nelle Regioni Settentrionali, con una marcata rappresentazione per numero di dataset.
+
