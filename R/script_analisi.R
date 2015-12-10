@@ -1,23 +1,26 @@
+# start -------------------------------------------------------------------
 # AgID Catalogue dataset analysis
 # focusing on sanity-related administrations
 
-# TODO aggiornare lista
-# consistenza del dataset rispetto al bacino di dati
-# distribuzione geografica dei dati
-# varietà dei soggetti
-# varietà dei formati
-# prodotti: i 10 prodotti più usati per regione
-# produttori: i 10 produttori più presenti per regione
-# gli n prodotti+produttori più usati in generale
-# gli n produttori più diffusi per numero di dataset
-# gli n produttori più diffusi per copertura territoriale
-# coperture territoriali
+# 1) dataset consistency vs total 
+# 2) geographical association 
+# 3) subjects
+# 4) formats
+# (1 table) formats vs producers table 
+# 5) top 10 products in each region by dataset number
+# 6) top 50 products in nation by dataset number
+# 7) top 50 vendors in nation by geographical coverage
+# 8) top 10 vendors in each region by dataset number
+# 9) top 20 vendors in nation by dataset number
+# 10) top 20 vendors in nation by geographical coverage
+# (20 charts) top 20 vendors geographical coverages 
 
 # author Paolo Soleni
 # Univerista Ca Foscari
-# 2015 11
+# 2015 11-12
 
-# import moduli
+
+# import modules
 library(ggplot2)
 library(ggmap)
 library(stringr)
@@ -25,11 +28,14 @@ library(sp)
 library(grid)
 library(xtable)
 
+
+
+
 # path
 inputPath<- "AgID/analisi dati socio-sanitari/input"
 outputPath<- "AgID/analisi dati socio-sanitari/export"
 
-# elementi comuni ai grafici
+# shared graphix properties
 chart_title<-element_text(face="bold", size=20)
 legend_title<-element_text(size = 14)
 axis_label<-element_text(size = 12)
@@ -38,23 +44,24 @@ legend_item<-element_text(size = 12)
 
 
 data <- read.csv(file=file.path(inputPath, "agid_dati_amministrazioni_sanita[refined].csv"), header=TRUE, sep=",",encoding="UTF-8", na.strings = "")
-#
-# consistenza del dataset
-#
-# creo variabile categoriale fattore codice_tipologia
+
+####
+# 1) dataset consistency vs total ----------------------------------------- 
+####
+
+# creating factorial variable codice_tipologia_fact
 amministrazioni_df <- read.csv(file=file.path(inputPath, "amministrazioni.csv"), header=TRUE, sep=",",encoding="UTF-8", na.strings = "")
 amministrazioni_df$codice_tipologia_fact <- factor(amministrazioni_df$codice_tipologia)
 
-# le tipologie di interesse sono quelle del codice_tipologia
+# filter on tipology
 amministrazioni_df$healthsector <- amministrazioni_df$codice_tipologia_fact %in% levels(data$codice_tipologia)
 
-# creazione pie diagram
+# pie diagram
 tipologie_table_df<-as.data.frame(table(amministrazioni_df$healthsector))
 labels_tipologie_percent<-paste0(100*round(tipologie_table_df$Freq/sum(tipologie_table_df$Freq),3),"%")
 labels_tipologie = paste(c("Altre tipologie","Amministrazioni di Area Sanitara"), labels_tipologie_percent)
 y.breaks <- cumsum(tipologie_table_df$Freq) - tipologie_table_df$Freq/2
 png(filename=file.path(outputPath, "1_amministrazioni.png"),width = 1200, height = 900)
-
 ggplot(tipologie_table_df, aes(x=factor(1),y=Freq, fill=Var1))+
   geom_bar(width = 1,stat="identity")+
   coord_polar(theta="y") +
@@ -79,11 +86,14 @@ ggplot(tipologie_table_df, aes(x=factor(1),y=Freq, fill=Var1))+
         )
 dev.off()
 
-# trasformazione in factor per aggregazioni
+####
+# 2) geographical association ---------------------------------------------
+####
+
 data$regione <- as.factor(data$regione)
 data$provincia <- as.factor(data$provincia)
 
-# numero di dataset per regione e per provincia
+# dataset count by region and district 
 cnt_regione <- data.frame(table(data$regione), stringsAsFactors = FALSE)
 colnames(cnt_regione) <- c("regione_fact","cntregione")
 cnt_regione$regione<-as.character(cnt_regione$regione_fact)
@@ -93,25 +103,26 @@ colnames(cnt_provincia) <- c("provincia","cntprovincia")
 data<-merge(data, cnt_regione)
 data<-merge(data, cnt_provincia)
 
-# carica i dati di geonames
+# loading geonames data
 geonames_data = read.table(file=file.path(inputPath, "IT.txt"),  header = FALSE, stringsAsFactors = FALSE ,sep="\t", encoding="UTF-8", quote="", comment.char="")
 geonames_regioni <- geonames_data[geonames_data$V8=="ADM1",]
 geonames_province <- geonames_data[geonames_data$V8=="ADM2",]
 
-# merge: totali per provincia con dati geonames di provincia
+# merging: district total count with geonames district data
 cnt_provincia<-merge(geonames_province,cnt_provincia,by.x="V12",by.y="provincia")
 
-# preprocessing dati regioni (alcuni nomi sono diversi)
-#individua i corrispondenti in geonames in base alla distanza minima
+# preprocessing region data (due to different naming convention)
+# matching with minimal distance
 perm_index<-sapply(cnt_regione$regione,FUN=agrep,geonames_regioni$V2)
 for(i in 1:length(perm_index)){
   cnt_regione[i,"regione"]<-geonames_regioni[perm_index[i],"V2"]
 }
-# merge: totali per regione   
+# merging: region total count   
 cnt_regione<-merge(geonames_regioni,cnt_regione,by.x="V2",by.y="regione")
-
 cnt_totali<-rbind(setNames(cnt_regione[,c("V5","V6","V8","cntregione")],c("lat", "lng","ADMtype","cnt")), setNames(cnt_provincia[,c("V5","V6","V8","cntprovincia")],c("lat", "lng","ADMtype","cnt")))
 cnt_totali$ADMtype <- factor(cnt_totali$ADMtype)
+
+# draw chart
 png(filename=file.path(outputPath, "2_distribuzione_dati_dataset.png"),width = 1200, height = 900)
 ggmap(get_map(location = 'Italy',source = "google", maptype="terrain", zoom=6), extent='panel') + 
   geom_point(data = cnt_totali, aes(x = lng, y = lat, colour=ADMtype, size=sqrt(cnt_totali$cnt)), alpha = 0.6) +
@@ -127,9 +138,11 @@ ggmap(get_map(location = 'Italy',source = "google", maptype="terrain", zoom=6), 
          )
 dev.off()
 
+####
+# 3) subjects -------------------------------------------------------------
+####
 
-# ripartizione dei soggetti
-# definisce la soglia di taglio per aggregare i soggetti sotto i 50 dataset
+# threshold for subject aggregation below the given dataset number
 cut_threshold <- 30
 
 soggetti<-table(data$soggetto)
@@ -141,18 +154,17 @@ top_soggetti_df$top_soggetti_head <- ifelse(top_soggetti_df$top_soggetti > cut_t
 threshold_cumsum<-sum(top_soggetti_df[top_soggetti_df$top_soggetti<=cut_threshold, "top_soggetti"])
 top_soggetti_df$top_soggetti_head_cumsum <- as.numeric(ifelse(top_soggetti_df$top_soggetti > cut_threshold, top_soggetti_df$top_soggetti, threshold_cumsum))
 
-# costruisce factor che raccoglie i casi marginali in un altra categoria
+# label for entries below threshold
 top_soggetti_df$top_soggetti_head <- ifelse(top_soggetti_df$top_soggetti > cut_threshold, levels(top_soggetti_df$soggetti)[top_soggetti_df$soggetti], "Altro")
-# ridefinisce l'ordine del factor per priorità (serve per avere la legenda ordinata)
+# reload factor by priority (necessary for correct chart legend)
 top_soggetti_df$top_soggetti_head <- factor(top_soggetti_df$top_soggetti_head,levels=unique(top_soggetti_df$top_soggetti_head))
-
 top_soggetti_levels <- top_soggetti_df[1:length(levels(top_soggetti_df$top_soggetti_head)), "top_soggetti_head_cumsum"]
-
 top_soggetti_chart_values <- top_soggetti_df[1:length(levels(top_soggetti_df$top_soggetti_head)),"top_soggetti_head_cumsum"]
 top_soggetti_chart_total <- sum(top_soggetti_chart_values) 
+
+# draw chart
 labels_top_soggetti_percent<-paste0(100*round(top_soggetti_chart_values/top_soggetti_chart_total,3),"%")
 labels_top_soggetti = paste(levels(top_soggetti_df$top_soggetti_head), labels_top_soggetti_percent, sep = "\n")
-
 y.breaks <- cumsum(top_soggetti_levels) - top_soggetti_levels/2
 png(filename=file.path(outputPath, "3_soggetti.png"),width = 1200, height = 900)
 ggplot(top_soggetti_df, aes(x=factor(1), y=top_soggetti,fill=top_soggetti_head))+
@@ -181,9 +193,11 @@ ggplot(top_soggetti_df, aes(x=factor(1), y=top_soggetti,fill=top_soggetti_head))
   )
 dev.off()
 
+####
+# 4) formats --------------------------------------------------------------
+####
 
-# ripartizione dei formati
-# definisce la soglia di taglio per aggregare i formati sotto tale soglia di numero di dataset
+# threshold for aggregation below the given dataset number
 cut_threshold <- 30
 
 formati<-table(data$formato)
@@ -195,19 +209,17 @@ top_formati_df$top_formati_head <- ifelse(top_formati_df$top_formati > cut_thres
 threshold_cumsum<-sum(top_formati_df[top_formati_df$top_formati<=cut_threshold, "top_formati"])
 top_formati_df$top_formati_head_cumsum <- as.numeric(ifelse(top_formati_df$top_formati > cut_threshold, top_formati_df$top_formati, threshold_cumsum))
 
-# costruisce factor che raccoglie i casi marginali in un altra categoria
+# label for entries below threshold
 top_formati_df$top_formati_head <- ifelse(top_formati_df$top_formati > cut_threshold, levels(top_formati_df$formati)[top_formati_df$formati], "Altro")
-# ridefinisce l'ordine del factor per priorità (serve per avere la legenda ordinata)
+# reload factor by priority (necessary for correct chart legend)
 top_formati_df$top_formati_head<- factor(top_formati_df$top_formati_head,levels=unique(top_formati_df$top_formati_head))
-# droppa dal factor i livelli non usati
-
 top_formati_levels <- top_formati_df[1:length(levels(top_formati_df$top_formati_head)), "top_formati_head_cumsum"]
-
 top_formati_chart_values <- top_formati_df[1:length(levels(top_formati_df$top_formati_head)),"top_formati_head_cumsum"]
 top_formati_chart_total <- sum(top_formati_chart_values) 
+
+# draw chart
 labels_top_formati_percent<-paste0(100*round(top_formati_chart_values/top_formati_chart_total,3),"%")
 labels_top_formati = paste(str_replace(levels(top_formati_df$top_formati_head)," ","\n"), labels_top_formati_percent)
-
 y.breaks <- cumsum(top_formati_levels) - top_formati_levels/2
 png(filename=file.path(outputPath, "4_formati.png"),width = 1200, height = 1200)
 ggplot(top_formati_df, aes(x=factor(1), y=top_formati,fill=top_formati_head))+
@@ -230,7 +242,6 @@ ggplot(top_formati_df, aes(x=factor(1), y=top_formati,fill=top_formati_head))+
         axis.ticks = element_blank(),
         plot.title=chart_title,
         axis.title=axis_label,
-        # axis.text=axis_tick_label,
         axis.text=element_text(size = 12, colour="black", hjust=0.5, vjust=0.5),
         legend.text=legend_item, 
         legend.title=legend_title,
@@ -238,15 +249,18 @@ ggplot(top_formati_df, aes(x=factor(1), y=top_formati,fill=top_formati_head))+
   )
 dev.off()
 
-# dopo le statistiche aggregate, effetua ulteriore filtro di pulizia
-# elimina le righe che non presentano dati completi per prodotto, produttore, regione
+####
+# (1 table) formats vs producers table ------------------------------------
+####
+
+# after aggregate statistic above, perform a futher cleanup 
+# delete rows  with na values in either product, vendor, region
 data<-data[complete.cases(data[,c("prodotto", "produttore","regione")]),]
 
-# suddivisione dei formati in base ai produttori
+# formats by vendors
 formati_produttori_list <- list() #create an empty list
 for(fp in 1:length(levels(top_formati_df$top_formati_head))){
   fp_vec <-levels(top_formati_df$top_formati_head)
-  #print(fp_vec[fp])
   fp_table<-table(data[data$formato==fp_vec[fp],"produttore"])
   fp_table_top<-head(fp_table[order(fp_table,decreasing=TRUE)],10)
   for(f in 1:length(fp_table_top)){
@@ -271,16 +285,19 @@ print(xtable(formati_produttori_df,
       file=file.path(outputPath, "produttori_formati.html")
 )
 
-# prodotti: i 10 prodotti più usati per regione
+####
+# 5) top 10 products in each region by dataset number ---------------------
+####
 
 prodotti<-table(data$prodotto, data$regione)
 prodotti<-as.data.frame(prodotti)
 prodotti<-prodotti[order(prodotti$Var2, -prodotti$Freq),]
 top_prodotti_list<-by(prodotti, prodotti$Var2, head, n=10)
 top_prodotti_table<-do.call(rbind,top_prodotti_list)
-top_prodotti_table$Var1<-droplevels(top_prodotti_table$Var1) # droppa dal factor i livelli non usati
+# drop unused factor levels
+top_prodotti_table$Var1<-droplevels(top_prodotti_table$Var1)
 top_prodotti_table_nz<-top_prodotti_table[top_prodotti_table$Freq>0,]
-top_prodotti_table_nz$Var1<-droplevels(top_prodotti_table_nz$Var1) # droppa dal factor i livelli non usati
+top_prodotti_table_nz$Var1<-droplevels(top_prodotti_table_nz$Var1)
 
 top_prodotti_ordered<-tapply(top_prodotti_table_nz$Freq, top_prodotti_table_nz$Var1, FUN=sum)
 top_prodotti_ordered<-top_prodotti_ordered[order(top_prodotti_ordered, decreasing=TRUE)]
@@ -289,6 +306,7 @@ top_prodotti_ordered_df$names <- rownames(top_prodotti_ordered_df)
 top_prodotti_table_nz<-merge(top_prodotti_table_nz, top_prodotti_ordered_df, by.x="Var1", by.y="names")
 top_prodotti_table_nz$Var1 = factor(top_prodotti_table_nz$Var1, levels=unique(top_prodotti_table_nz[order(top_prodotti_table_nz$top_prodotti_ordered, decreasing=TRUE), "Var1"]))
 
+#draw chart
 png(filename=file.path(outputPath, "5_10_top_prodotti_regione.png"),width = 1200, height = 1200)
 ggplot(top_prodotti_table_nz, aes(Var2, Var1, size=Freq)) + 
   geom_point() +
@@ -306,8 +324,11 @@ ggplot(top_prodotti_table_nz, aes(Var2, Var1, size=Freq)) +
         )
 dev.off()
 
+####
+# 6) top 50 products in nation by dataset number --------------------------
+####
 
-# gli n prodotti+produttori più usati in generale
+# threshold for heading data rows extraction
 nrprod_prod<-50
 data$prodotto_produttore <- paste(data$prodotto, data$produttore, sep="XXbyXX")
 tab_prod_prod<-table(data$prodotto_produttore)
@@ -317,10 +338,11 @@ prodotti_produttori<-table(top_prod_prod_ita$prodotto_produttore, top_prod_prod_
 prodotti_produttori<-as.data.frame(prodotti_produttori)
 prodotti_produttori<-prodotti_produttori[prodotti_produttori$Freq>0,]
 
-# ridefinisce l'ordine del factor per priorità (serve per avere la legenda ordinata) 
+# reload factor by priority (necessary for correct chart legend)
 prodotti_produttori$Var1 = factor(prodotti_produttori$Var1, levels=unique(prodotti_produttori[order(prodotti_produttori$Freq, decreasing=TRUE), "Var1"]))
 prodotti_produttori$Var1<-droplevels(prodotti_produttori$Var1)
 
+# draw chart
 png(filename=file.path(outputPath, "6_50_top_prodottiEproduttori_nazionali.png"),width = 1200, height = 1200)
 ggplot(prodotti_produttori, aes(Var2, Var1, size=Freq)) + 
   geom_point() +
@@ -340,8 +362,11 @@ ggplot(prodotti_produttori, aes(Var2, Var1, size=Freq)) +
   )
 dev.off()
 
+####
+# 7) top 50 vendors in nation by geographical distribution ----------------
+####
 
-# prodotti: i 50 prodotti più diffusi
+# threshold for heading data rows extraction
 nrprod_aggregati<-50
 data$prodotto_produttore <- paste(data$prodotto, data$produttore, sep="XXbyXX")
 prodotti_aggregati_regioni<-aggregate(data["prodotto_produttore"], by=data[c("prodotto_produttore","regione")], FUN=length)
@@ -376,12 +401,17 @@ ggplot(prodotti_aggregati_regioni_filtered, aes(regione, prodotto_produttore, si
   )
 dev.off()
 
-# produttori: i 10 produttori più presenti per regione
+####
+# 8) top 10 vendors in each region by dataset number ----------------------
+####
+
+# threshold for heading data rows extraction
+nrprod_regione<-10
 
 produttori<-table(data$produttore, data$regione)
 produttori<-as.data.frame(produttori)
 produttori<-produttori[order(produttori$Var2, -produttori$Freq),]
-top_produttori_list<-by(produttori, produttori$Var2, head, n=10)
+top_produttori_list<-by(produttori, produttori$Var2, head, n=nrprod_regione)
 top_produttori_table<-do.call(rbind,top_produttori_list)
 top_produttori_table$Var1<-droplevels(top_produttori_table$Var1) # droppa dal factor i livelli non usati
 top_produttori_table_nz<-top_produttori_table[top_produttori_table$Freq>0,]
@@ -392,6 +422,7 @@ top_produttori_ordered_df <-as.data.frame(top_produttori_ordered)
 top_produttori_ordered_df$names <- rownames(top_produttori_ordered_df)
 top_produttori_table_nz<-merge(top_produttori_table_nz, top_produttori_ordered_df, by.x="Var1", by.y="names")
 top_produttori_table_nz$Var1 = factor(top_produttori_table_nz$Var1, levels=unique(top_produttori_table_nz[order(top_produttori_table_nz$top_produttori_ordered, decreasing=TRUE), "Var1"]))
+# draw chart
 png(filename=file.path(outputPath, "8_10_top_produttori_regione.png"),width = 1200, height = 1200)
 ggplot(top_produttori_table_nz, aes(Var2, Var1, size=Freq)) + 
   geom_point() +
@@ -411,35 +442,10 @@ ggplot(top_produttori_table_nz, aes(Var2, Var1, size=Freq)) +
   )
 dev.off()
 
-# gli n prodotti più usati in generale
-# nrprod<-20
-# tab_prod<-table(data$prodotto)
-# tab_top_prod<-head(tab_prod[order(tab_prod,decreasing=TRUE)],nrprod)
-# top_prodotti_ita<-prodotti[prodotti$Var1 %in% names(tab_top_prod),]
-# top_prodotti_ita<-top_prodotti_ita[top_prodotti_ita$Freq>0,]
-# # ridefinisce l'ordine del factor per priorità (serve per avere la legenda ordinata) 
-# top_prodotti_ita$Var1 = factor(top_prodotti_ita$Var1, levels=unique(top_prodotti_ita[order(top_prodotti_ita$Freq, decreasing=TRUE), "Var1"]))
-# top_prodotti_ita$Var1<-droplevels(top_prodotti_ita$Var1)
-# png(filename=file.path(outputPath, "7_20_top_prodotti_nazionali.png"),width = 1200, height = 900)
-# ggplot(top_prodotti_ita, aes(Var2, Var1, size=Freq)) + 
-#   geom_point() +
-#   xlab("Regioni") + ylab("Prodotti") +
-#   scale_x_discrete(labels = function(x) str_wrap(x, width = 10))+
-#   scale_size_continuous("Numero di dataset") +
-#   ggtitle(paste("Prodotti \n(", nrprod," maggiori a livello nazionale)",sep=""))+
-#   theme(axis.text.y=element_text(size=10, colour="black"),
-#         axis.text.x=element_text(size=12, colour="black", hjust=1, angle=30),
-#         panel.grid=element_line(colour="gray", size=1),
-#         panel.background = element_rect(fill="light gray"),
-#         axis.title=axis_label,
-#         plot.title=chart_title,
-#         legend.text=legend_item, 
-#         legend.title=legend_title
-#   )
-# dev.off()
 
-
-# gli n produttori più diffusi per numero di dataset
+####
+# 9) top 20 vendors in nation by dataset number ---------------------------
+####
 
 nrproduttori<-20
 tab_produttori<-table(data$produttore)
@@ -449,9 +455,10 @@ top_produttori_ita<-produttori[produttori$Var1 %in% names(tab_tab_produttori),]
 top_produttori_ita<-top_produttori_ita[top_produttori_ita$Freq>0,]
 top_produttori_ita$cnt_dataset<-ave(top_produttori_ita$Freq, top_produttori_ita$Var1,FUN=sum)
 
-# ridefinisce l'ordine del factor per priorità (serve per avere la legenda ordinata) 
+# reload factor by priority (necessary for correct chart legend) 
 top_produttori_ita$Var1 = factor(top_produttori_ita$Var1, levels=unique(top_produttori_ita[order(top_produttori_ita$cnt_dataset, decreasing=TRUE), "Var1"]))
 top_produttori_ita$Var1<-droplevels(top_produttori_ita$Var1)
+# draw chart
 png(filename=file.path(outputPath, "9_20_top_produttori_per_nr_dataset.png"),width = 1200, height = 900)
 ggplot(top_produttori_ita, aes(Var2, Var1, size=Freq)) + 
   geom_point() +
@@ -471,7 +478,10 @@ ggplot(top_produttori_ita, aes(Var2, Var1, size=Freq)) +
   )
 dev.off()
 
-# gli n produttori più diffusi per copertura territoriale
+####
+# 10) top 20 vendors in nation by geographical coverage ---------------
+####
+
 nrproduttori_terr<-20
 produttori_regioni<-table(data$produttore, data$regione)
 produttori_regioni<-ifelse(produttori_regioni>0, 1,0)
@@ -482,7 +492,7 @@ top_produttori_territori<- head(produttori_territori[order(produttori_territori,
 top_produttori_regioni<-produttori[produttori$Var1 %in% names(top_produttori_territori),]
 top_produttori_regioni<-top_produttori_regioni[top_produttori_regioni$Freq>0,]
 top_produttori_regioni$Var1 = factor(top_produttori_regioni$Var1, levels=names(top_produttori_territori))
-
+# draw chart
 png(filename=file.path(outputPath, "10_20_top_produttori_per_copertura.png"),width = 1200, height = 900)
 ggplot(top_produttori_regioni, aes(Var2, Var1, size=Freq)) + 
   geom_point() +
@@ -502,12 +512,15 @@ ggplot(top_produttori_regioni, aes(Var2, Var1, size=Freq)) +
   )
 dev.off()
 
-  
-# import dati shapefile regione
+####
+# (20 charts) top 20 vendors geographical coverages -----------------------
+####
+
+# import regions shape file
 it_adm1<-readRDS(file=file.path(inputPath, "ITA_adm1.rds"))
 it_regione <- spTransform(it_adm1, CRS("+proj=longlat +datum=WGS84"))
 it_regione.df <- fortify(it_regione)
-# corregge i nomi differenti
+# names correction 
 it_regione$NAME_1[2]<-"Puglia"
 it_regione$NAME_1[6]<-"Emilia Romagna"
 it_regione$NAME_1[7]<-"Friuli Venezia Giulia"
@@ -515,12 +528,12 @@ it_regione$NAME_1[15]<-"Sicilia"
 it_regione$NAME_1[17]<-"Trentino Alto Adige"
 it_regione$NAME_1[19]<-"Valle D'Aosta"
 
-#estrae la mappa id-regione 
+# ID to region association definition  
 mappa_id_regione<-it_regione@data[,c("NAME_1","ID_1")]
-# definisce le mappe di base
+# draw the base map layer
 base_plot<-ggplot()
 base_poly<-geom_polygon(data=it_regione.df, aes(x=long, y=lat, group=group), alpha=0.2, color='white', fill="white")
-# gradient per i colori in base alla scala
+# gradient definition
 colourgradient<-scale_fill_gradient(name="Numero di dataset",limits=c(min(top_produttori_regioni$Freq), max(top_produttori_regioni$Freq)), low="blue", high="red")
 
 for (p in 1:length(top_produttori_territori)) {

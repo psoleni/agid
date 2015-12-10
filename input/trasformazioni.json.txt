@@ -4764,5 +4764,233 @@
         "to": "Softec"
       }
     ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column soggetto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "soggetto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Altro: amministrazione"
+        ],
+        "to": "amministrazione"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column soggetto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "soggetto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Altro: contabilità"
+        ],
+        "to": "contabilità"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column soggetto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "soggetto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Altro: delibere"
+        ],
+        "to": "delibere"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column soggetto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "soggetto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Altro: gestione amministrativa"
+        ],
+        "to": "gestione amministrativa"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column soggetto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "soggetto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Altro: Gestione utenti"
+        ],
+        "to": "gestione utenti"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column soggetto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "soggetto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Altro:personale"
+        ],
+        "to": "personale"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column soggetto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "soggetto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Altro: protocollo"
+        ],
+        "to": "protocollo"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column soggetto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "soggetto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "amministrazione",
+          "Amministrazione"
+        ],
+        "to": "amministrazione"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Contabilità",
+          "contabilità"
+        ],
+        "to": "Contabilità"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Personale",
+          "personale"
+        ],
+        "to": "Personale"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column soggetto",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "soggetto",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Documentale",
+          "Altro: documentale",
+          "Altro: gestione documentale"
+        ],
+        "to": "gestione documentale"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gestione documentale",
+          "Altro: gestione documentale"
+        ],
+        "to": "gestione documentale"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "gestione amministrativa",
+          "Gestione amministrativo-contabile"
+        ],
+        "to": "gestione amministrativa"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rilevazione presenze",
+          "Altro: rilevazione presenze"
+        ],
+        "to": "rilevazione presenze"
+      }
+    ]
   }
 ]

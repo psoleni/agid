@@ -85,7 +85,7 @@ L7,BO,Emilia Romagna,Bilancio,Web,Albo fornitori FARE,CSAmed
 L7,VE,Veneto,Comunicazioni,Oracle,Albo pretorio,Dedagroup
 L7,TR,Umbria,Salute,Mysql,Albo pretorio,Sistematica S.p.a.
 L34,RE,Emilia Romagna,Sicurezza,Sql,ALFAGEST,Lema Informatica Srl
-L7,MI,Lombardia,Altro: amministrazione,Mysql,Alfresco NordCom,Alfresco Software Inc.
+L7,MI,Lombardia,amministrazione,Mysql,Alfresco NordCom,Alfresco Software Inc.
 L8,PV,Lombardia,Salute,Oracle,Aliseo,Windex
 L8,GE,Liguria,Lavoro,Oracle,Aliseo,Windex
 L8,GE,Liguria,Bilancio,Oracle,Aliseo,Windex
@@ -143,7 +143,7 @@ L7,SV,Liguria,Salute,Oracle,ARCH,ASL2
 L34,PD,Veneto,Lavoro,Sql,ARCHIDOC,Siav
 L7,CR,Lombardia,Comunicazioni,Oracle,Archiflow,Ditta SIAV Spa - Rubano (PD)
 L8,CR,Lombardia,Salute,Oracle,Archiflow,Siav
-L7,LO,Lombardia,Documentale,Raman,Archiflow,Siav
+L7,LO,Lombardia,gestione documentale,Raman,Archiflow,Siav
 L7,BS,Lombardia,Salute,Oracle,Archiflow,Siav
 L7,BZ,Trentino Alto Adige,Salute,Oracle,Archiflow,Siav
 L7,AQ,Abruzzo,Trasparenza,Microsoft SQL Server,Archiflow,Siav
@@ -218,7 +218,7 @@ L7,AQ,Abruzzo,Salute,Oracle,Aster,Caribel Programmazione
 L7,LO,Lombardia,Salute,Oracle,ASTER CML,Caribel Programmazione
 L8,GE,Liguria,Salute,Sybase,ASTRAIA,ASTRAIA Gmbh
 L7,TR,Umbria,Salute,Microsoft SQL Server,Astrim,Astrim SpA
-L8,CZ,Calabria,Gestione documentale,Oracle,Athena,Noemalife
+L8,CZ,Calabria,gestione documentale,Oracle,Athena,Noemalife
 L7,BO,Emilia Romagna,Salute,Oracle,Athena,Noemalife
 L8,PR,Emilia Romagna,Salute,Oracle,Athena,Noemalife
 L8,MB,Lombardia,Salute,Oracle,Athena,Noemalife
@@ -294,7 +294,7 @@ L7,SV,Liguria,Salute,Oracle,BLOP2,Dedalus
 L8,VA,Lombardia,Salute,Oracle,BOPB,Engineering
 L8,BO,Emilia Romagna,Salute,Microsoft SQL Server,Braccialetti,SORI-DP
 L8,CR,Lombardia,Salute,Oracle,Broker,Agfa spa
-L34,TV,Veneto,Altro: gestione amministrativa,Firebird,Budget,Cba informatica
+L34,TV,Veneto,gestione amministrativa,Firebird,Budget,Cba informatica
 L34,VI,Veneto,Bilancio,Firebird,Budget,Cba informatica
 L34,TV,Veneto,Bilancio,Firebird,Budget,Cba informatica
 L34,VI,Veneto,Bilancio,Firebird,Budget,Cba informatica
@@ -372,7 +372,7 @@ L7,BS,Lombardia,Salute,Sql,ButterflyWEB,Praezision life
 L7,MI,Lombardia,Salute,Mysql,BVELCO3,ASL Milano 2
 L7,MI,Lombardia,Salute,Mysql,CallCenter DPM,ASL Milano 2
 L8,CR,Lombardia,Salute,Oracle,Camelia,Reply spa
-L7,MI,Lombardia,Altro: amministrazione,Oracle,Camelia,Santer Reply
+L7,MI,Lombardia,amministrazione,Oracle,Camelia,Santer Reply
 L8,PV,Lombardia,Salute,Oracle,Camelia - CUP,Santer Reply
 L7,BS,Lombardia,Salute,Oracle,CameliaWeb,Reply spa
 L8,VA,Lombardia,Salute,Oracle,CameliaWeb,Santer Reply
@@ -413,7 +413,7 @@ L34,VI,Veneto,Previdenza e assistenza,Firebird,cartella socio sanitaria,Cba info
 L34,TN,Trentino Alto Adige,Previdenza e assistenza,Firebird,cartella socio sanitaria,Cba informatica
 L34,TN,Trentino Alto Adige,Previdenza e assistenza,Firebird,cartella socio sanitaria,Cba informatica
 L34,VI,Veneto,Previdenza e assistenza,Firebird,cartella socio sanitaria,Cba informatica
-L34,TN,Trentino Alto Adige,Altro: Gestione utenti,Firebird,cartella socio sanitaria,Cba informatica
+L34,TN,Trentino Alto Adige,gestione utenti,Firebird,cartella socio sanitaria,Cba informatica
 L34,TN,Trentino Alto Adige,Previdenza e assistenza,Firebird,cartella socio sanitaria,Cba informatica
 L34,TN,Trentino Alto Adige,Previdenza e assistenza,Firebird,cartella socio sanitaria,Cba informatica
 L34,TV,Veneto,Previdenza e assistenza,Firebird,cartella socio sanitaria,Cba informatica
@@ -434,7 +434,7 @@ L7,BO,Emilia Romagna,Salute,Microsoft SQL Server,Cartelle,Vecomp
 L8,PR,Emilia Romagna,Bilancio,Microsoft SQL Server,CASSA,Sinfo s.r.l
 L7,VA,Lombardia,Salute,Microsoft access,CassaASL_Euro,ASL Varese
 L34,VI,Veneto,Bilancio,Firebird,Cassa economato,Cba informatica
-L34,TV,Veneto,Altro: gestione amministrativa,Firebird,Cassa economato,Cba informatica
+L34,TV,Veneto,gestione amministrativa,Firebird,Cassa economato,Cba informatica
 L34,UD,Friuli Venezia Giulia,Bilancio,Firebird,Cassa economato,Cba informatica
 L34,VI,Veneto,Bilancio,Firebird,Cassa economato,Cba informatica
 L34,TV,Veneto,Bilancio,Firebird,Cassa economato,Cba informatica
@@ -526,7 +526,7 @@ L8,VA,Lombardia,Bilancio,Oracle,CI4,Data processing
 L8,VA,Lombardia,Bilancio,Oracle,CI4,Data processing
 L34,FE,Emilia Romagna,Bilancio,Firebord,Contabilità economica,Cba informatica
 L7,VE,Veneto,Comunicazioni,Oracle,Civilia,Dedagroup
-L7,MI,Lombardia,Altro: amministrazione,Oracle,CMAP,DSP srl
+L7,MI,Lombardia,amministrazione,Oracle,CMAP,DSP srl
 L7,BS,Lombardia,Bilancio,Oracle,CO.AN.,Oslo
 L7,MI,Lombardia,Salute,Oracle,Cognos Query Studio e ReportNet,IBM Italia Spa
 L8,MI,Lombardia,Salute,Oracle,Concerto,Dedalus
@@ -552,7 +552,7 @@ L7,VA,Lombardia,Salute,Oracle,Consultori,GPI s.p.a.
 L7,TO,Piemonte,Salute,Microsoft SQL Server,Consuntivazioni prestazioni ambulatoriali,EDP Magliano
 L7,AL,Piemonte,Salute,DB2 AS/400,Contabilità,Dedalus
 L8,PZ,Basilicata,Bilancio,Sql,Contabilità,Intema Sanità Srl
-L34,TV,Veneto,Altro: gestione amministrativa,Firebird,Contabilità analitica,Cba informatica
+L34,TV,Veneto,gestione amministrativa,Firebird,Contabilità analitica,Cba informatica
 C7,PD,Veneto,Bilancio,Firebird,Contabilità analitica,Cba informatica
 L34,VI,Veneto,Bilancio,Firebird,Contabilità analitica,Cba informatica
 L34,VI,Veneto,Bilancio,Firebird,Contabilità analitica,Cba informatica
@@ -588,7 +588,7 @@ L34,VI,Veneto,Bilancio,Firebird,Contabilità analitica,Cba informatica
 L34,VI,Veneto,Bilancio,Firebird,Contabilità analitica,Cba informatica
 L34,TN,Trentino Alto Adige,Bilancio,Firebird,Contabilità analitica,Cba informatica
 L34,UD,Friuli Venezia Giulia,Bilancio,Firebird,Contabilità Bilancio,Cba informatica
-L34,TV,Veneto,Altro: gestione amministrativa,Firebird,Contabilità economica,Cba informatica
+L34,TV,Veneto,gestione amministrativa,Firebird,Contabilità economica,Cba informatica
 L34,VR,Veneto,Bilancio,Firebird,Contabilità economica,Cba informatica
 L34,TV,Veneto,Bilancio,Firebird,Contabilità economica,Cba informatica
 L34,IM,Liguria,Bilancio,Firebird,Contabilità economica,Cba informatica
@@ -813,7 +813,7 @@ L34,TN,Trentino Alto Adige,Previdenza e assistenza,Firebird,CONTABILITA' UTENTI,
 L34,TN,Trentino Alto Adige,Previdenza e assistenza,Firebird,CONTABILITA' UTENTI,Cba informatica
 L34,TN,Trentino Alto Adige,Previdenza e assistenza,Firebird,CONTABILITA' UTENTI,Cba informatica
 L34,TN,Trentino Alto Adige,Previdenza e assistenza,Firebird,CONTABILITA' UTENTI,Cba informatica
-L34,TN,Trentino Alto Adige,Altro: Gestione utenti,Firebird,CONTABILITA' UTENTI,Cba informatica
+L34,TN,Trentino Alto Adige,gestione utenti,Firebird,CONTABILITA' UTENTI,Cba informatica
 L8,PZ,Basilicata,Lavoro,Oracle,ContoAnnuale,Publisys S.p.A
 L34,TN,Trentino Alto Adige,Lavoro,Firebird,CONTROLLO ACCESSI,Cba informatica
 L34,VI,Veneto,Bilancio,Firebird,Controllo di Gestione,Cba informatica
@@ -833,7 +833,7 @@ L34,TN,Trentino Alto Adige,Previdenza e assistenza,Microsoft SQL Server,Coordina
 L34,PC,Emilia Romagna,Salute,Microsoft SQL Server,Coordinamento amministrativo Ospiti,Esakon
 L34,VE,Veneto,Salute,Microsoft SQL Server,Coordinamento amministrativo Ospiti,Esakon
 L7,LU,Toscana,Salute,Oracle,CORNEE,Mesis
-L8,CZ,Calabria,Gestione documentale,Microsoft SQL Server,CRCC,Tesi
+L8,CZ,Calabria,gestione documentale,Microsoft SQL Server,CRCC,Tesi
 L7,PG,Umbria,Salute,Mysql,CredNet,System Tecnology S.r.l.
 L7,TR,Umbria,Salute,Mysql,CredNet,Systems Technology
 L7,BO,Emilia Romagna,Salute,Oracle,CRSNet,SggSoft
@@ -884,7 +884,7 @@ L7,BS,Lombardia,Salute,Oracle,CUPNET,Hitech S.p.A.
 L7,AL,Piemonte,Salute,DB2 AS/400,CUP Radiologia e RSM,Dedalus
 L7,CN,Piemonte,Salute,Oracle,Cup Recall,AMOS
 L7,RO,Veneto,Salute,Oracle,CUPweb,Insiel
-L7,MI,Lombardia,Altro: amministrazione,NSF IBM Domino,Curriculum Vitae,IBM Italia Spa
+L7,MI,Lombardia,amministrazione,NSF IBM Domino,Curriculum Vitae,IBM Italia Spa
 L7,AO,Valle D'Aosta,Soccorso e/o protezione civile,Oracle,CUS,Insiel
 L7,OG,Sardegna,Salute,Mysql,DAE,SardegnaIT
 L8,BO,Emilia Romagna,Salute,Oracle,Data Warehouse,Oslo
@@ -895,8 +895,8 @@ L34,UD,Friuli Venezia Giulia,Trasparenza,Microsoft SQL Server,DB Albo Pretorio,D
 L34,UD,Friuli Venezia Giulia,Altro: Determine,Microsoft SQL Server,DB Det.net,DB Informatica
 L34,UD,Friuli Venezia Giulia,Altro: determinazioni dei responsabili di servizio,Microsoft SQL Server,DB Det.net,DB Informatica
 L34,UD,Friuli Venezia Giulia,Trasparenza,Microsoft SQL Server,DB Det.net,DB Informatica
-L34,UD,Friuli Venezia Giulia,Altro: delibere,DBMS MS Access,DB Gestione delibere,DB Informatica
-L34,UD,Friuli Venezia Giulia,Altro: delibere,DBMS MS Access,DB Gestione delibere,DB Informatica
+L34,UD,Friuli Venezia Giulia,delibere,DBMS MS Access,DB Gestione delibere,DB Informatica
+L34,UD,Friuli Venezia Giulia,delibere,DBMS MS Access,DB Gestione delibere,DB Informatica
 L34,UD,Friuli Venezia Giulia,Trasparenza,DBMS MS Access,DB Gestione delibere,DB Informatica
 L8,BA,Puglia,Salute,SQL server 2008 r2 express,DBLURTO,La Traccia
 L34,UD,Friuli Venezia Giulia,Trasparenza,Mysql,DB Trasparenza,DB Informatica
@@ -907,7 +907,7 @@ L7,BS,Lombardia,Salute,Oracle,Decreti,Siav
 L7,PI,Toscana,Comunicazioni,Mysql,Deliberazioni,Estav Nord Ovest
 L7,PI,Toscana,Comunicazioni,Mysql,Deliberazioni,Estav Nord Ovest
 L7,LU,Toscana,Comunicazioni,Oracle,Delibere,Caribel Programmazione
-L34,TV,Veneto,Altro: gestione amministrativa,Firebird,Delibere,Cba informatica
+L34,TV,Veneto,gestione amministrativa,Firebird,Delibere,Cba informatica
 L34,TV,Veneto,Bilancio,Firebird,Delibere,Cba informatica
 L34,TV,Veneto,Bilancio,Firebird,Delibere,Cba informatica
 L34,TV,Veneto,Bilancio,Firebird,Delibere,Cba informatica
@@ -1017,7 +1017,7 @@ L8,BO,Emilia Romagna,Salute,Oracle,Dnweb,Noemalife
 L7,AQ,Abruzzo,Salute,Oracle,Dnweb,Noemalife
 L8,MN,Lombardia,Salute,Oracle,Dnweb,Noemalife
 L7,TP,Sicilia,Salute,Oracle,Dnweb,Noemalife
-L7,MI,Lombardia,Altro: amministrazione,Mysql,DOCMA,ASL Milano 2
+L7,MI,Lombardia,amministrazione,Mysql,DOCMA,ASL Milano 2
 L7,CN,Piemonte,Salute,Microsoft SQL Server,DocsPA,NTT Data
 L34,UD,Friuli Venezia Giulia,Lavoro,Microsoft SQL Server,DOCUMENTI,Nord Est Systems S.r.l.
 L7,MN,Lombardia,Salute,Microsoft SQL Server,Domusmed,STUDIOSOFT INFORMATICA S.r.l.
@@ -1038,7 +1038,7 @@ L8,PZ,Basilicata,Salute,Sql,Dossier Sanitario,Regione Basilicata
 L7,MI,Lombardia,Salute,Sql,DoxLex,El Saidi Software
 L7,MI,Lombardia,Salute,Oracle,DSPHealthCare,DSP
 L7,MN,Lombardia,Bilancio,Microsoft SQL Server,DSS Musa,IG Consulting s.r.l.
-L7,MI,Lombardia,Altro: amministrazione,Microsoft SQL Server,DW Archive WEB,HB.IT Group Srl
+L7,MI,Lombardia,amministrazione,Microsoft SQL Server,DW Archive WEB,HB.IT Group Srl
 L7,VA,Lombardia,Salute,Oracle,DWH,Oslo
 L8,MI,Lombardia,Salute,Oracle,DWHO,MIES S.R.L.
 L7,BS,Lombardia,Trasparenza,Mysql,Dynamic Site,Assyrus S.r.l.
@@ -1054,7 +1054,7 @@ L7,PG,Umbria,Salute,Mysql,Ecwmed,System Tecnology S.r.l.
 L7,TO,Piemonte,Salute,Oracle,EDF,Engineering
 L7,BO,Emilia Romagna,Salute,Microsoft SQL Server,Efeso,Newteam
 L7,BI,Piemonte,Salute,Microsoft SQL Server,Effetto Farfalla,MUST
-L8,CN,Piemonte,Altro: protocollo,Dbms,Egisto,Siscom spa
+L8,CN,Piemonte,protocollo,Dbms,Egisto,Siscom spa
 L7,BO,Emilia Romagna,Salute,Microsoft SQL Server,Elea,Newteam
 L7,FE,Emilia Romagna,Salute,Oracle,Elea,Newteam
 L7,TR,Umbria,Salute,4,Elefante,Agfa
@@ -1067,7 +1067,7 @@ L8,BO,Emilia Romagna,Salute,Oracle,Eliot,Engineering
 L7,MI,Lombardia,Salute,Oracle,Emma,Beta80
 L7,LU,Toscana,Salute,Oracle,Emma,Beta80
 L7,MI,Lombardia,Salute,Sybase,Emma,Beta80
-L8,CZ,Calabria,Gestione documentale,Microsoft SQL Server,Emodata,Tesi
+L8,CZ,Calabria,gestione documentale,Microsoft SQL Server,Emodata,Tesi
 L8,TR,Umbria,Salute,Microsoft SQL Server,Emodata,Tesi informatica
 L7,PG,Umbria,Salute,Microsoft SQL Server,Emodata,Tesi informatica
 L8,GE,Liguria,Salute,Oracle,Emonet,Insiel
@@ -1141,7 +1141,7 @@ L8,MI,Lombardia,Bilancio,Oracle,Eusis Magazzino,GPI
 L8,MI,Lombardia,Salute,Oracle,Eusis Pharma,GPI
 L8,MI,Lombardia,Bilancio,Oracle,Eusis Richieste,GPI
 L8,MI,Lombardia,Bilancio,Oracle,Eusis Status,GPI
-L7,MI,Lombardia,Altro: amministrazione,Oracle,EvoFatturaPA,CloudEVO Srl
+L7,MI,Lombardia,amministrazione,Oracle,EvoFatturaPA,CloudEVO Srl
 L7,MN,Lombardia,Salute,Microsoft SQL Server,Examianto,STUDIOSOFT INFORMATICA S.r.l.
 L8,TR,Umbria,Salute,Microsoft SQL Server,Factotum,Fly Tecnology
 L34,RA,Emilia Romagna,Previdenza e assistenza,Firebird,FAR,Cba informatica
@@ -1182,7 +1182,7 @@ L8,VA,Lombardia,Salute,Oracle,First Aid,Engineering
 L8,VA,Lombardia,Salute,DICOM,First Aid,Engineering
 L8,VA,Lombardia,Salute,Oracle,First Aid,Engineering
 L8,CR,Lombardia,Salute,Oracle,First Aid,Engineering
-L8,CZ,Calabria,Gestione documentale,Oracle,First Aid,Sago Informatica Sanitaria
+L8,CZ,Calabria,gestione documentale,Oracle,First Aid,Sago Informatica Sanitaria
 L7,AO,Valle D'Aosta,Lavoro,Oracle,First Aid,Sago is
 L7,PI,Toscana,Salute,Oracle,First Aid,Dedalus
 L8,TR,Umbria,Salute,Oracle,First Aid,Dedalus
@@ -1331,7 +1331,7 @@ L34,TN,Trentino Alto Adige,Lavoro,Firebird,Gestione 770,Cba informatica
 L34,MB,Lombardia,Lavoro,Firebird,Gestione 770,Cba informatica
 L34,PD,Veneto,Imprese,Mysql,Gestione Albo fornitori e Gare telematiche,Ichnosnet
 L34,TN,Trentino Alto Adige,Imprese,Mysql,Gestione Albo fornitori e Gare telematiche,Ichnosnet
-L34,TV,Veneto,Altro: gestione amministrativa,Firebird,Gestione cespiti,Cba informatica
+L34,TV,Veneto,gestione amministrativa,Firebird,Gestione cespiti,Cba informatica
 L34,VI,Veneto,Bilancio,Firebird,Gestione cespiti,Cba informatica
 L34,VR,Veneto,Bilancio,Firebird,Gestione cespiti,Cba informatica
 L34,BL,Veneto,Bilancio,Firebird,Gestione cespiti,Cba informatica
@@ -1431,7 +1431,7 @@ L7,PI,Toscana,Salute,Oracle,GST,Data processing
 L7,BO,Emilia Romagna,Salute,Oracle,GST,Data processing
 L7,BI,Piemonte,Salute,Microsoft SQL Server,GST,Exprivia
 L7,PG,Umbria,Salute,Mysql,GUARD,Micra
-L8,PZ,Basilicata,Altro: documentale,Sql,GUPAR,Regione Basilicata
+L8,PZ,Basilicata,gestione documentale,Sql,GUPAR,Regione Basilicata
 L7,TR,Umbria,Salute,Microsoft SQL Server,GURU,Pegaso 2000
 L7,PG,Umbria,Salute,Mysql,GURU,Pegaso 2000
 L7,BS,Lombardia,Lavoro,Mysql,Guru/Portalmed,Pegaso 2000
@@ -1459,7 +1459,7 @@ L7,PT,Toscana,Salute,Microsoft SQL Server,HOSPITALWEB,Dedalus
 L8,MI,Lombardia,Salute,Oracle,HR,Engineering
 L7,MI,Lombardia,Salute,AS400. La base dati è in outsourcing,HR Medici,Santer Reply
 L7,BS,Lombardia,Lavoro,DB2 AS/400,HR-SIGMA,Sigma Informatica
-L7,MI,Lombardia,Altro: amministrazione,DB2 AS/400,Suite HR,Sigma Informatica
+L7,MI,Lombardia,amministrazione,DB2 AS/400,Suite HR,Sigma Informatica
 L7,PI,Toscana,Salute,Oracle,HTH,Data processing
 L7,PI,Toscana,Salute,Oracle,HTH,Data processing
 L7,PI,Toscana,Salute,Oracle,HTH,Data processing
@@ -1469,7 +1469,7 @@ L8,BS,Lombardia,Salute,Microsoft SQL Server,HyperDok,Edok
 L8,PR,Emilia Romagna,Comunicazioni,Microsoft SQL Server,IAP,Progel s.r.l.
 L7,BO,Emilia Romagna,Salute,Oracle,IASI,Iasi
 L7,AQ,Abruzzo,Salute,Oracle,IASI RIS,G.E. / IASI
-L7,MI,Lombardia,Altro: amministrazione,NSF IBM Domino,IBM Domino Server,IBM Italia Spa
+L7,MI,Lombardia,amministrazione,NSF IBM Domino,IBM Domino Server,IBM Italia Spa
 L8,CR,Lombardia,Salute,Oracle,ICARO,Lombardia informatica
 L7,TR,Umbria,Salute,Microsoft SQL Server,IDS5,Sectra
 L7,CN,Piemonte,Salute,Oracle,IE-Accettazione,GPI
@@ -1484,7 +1484,7 @@ L7,CN,Piemonte,Salute,Oracle,IE-Cup,GPI
 L7,CN,Piemonte,Salute,Oracle,IE-Cup,GPI
 L34,PR,Emilia Romagna,Lavoro,Sql,IGIT,Ragni sistemi
 L34,PR,Emilia Romagna,Lavoro,/,IGIT,Ragni sistemi
-C7,RM,Lazio,Altro:personale,Microsoft SQL Server,IHR,IHR
+C7,RM,Lazio,Personale,Microsoft SQL Server,IHR,IHR
 L34,BL,Veneto,Bilancio,Firebird,Inventario beni,Cba informatica
 L8,CR,Lombardia,Salute,Oracle,IMA,Lombardia informatica
 L8,TR,Umbria,Salute,Oracle,Impax,Agfa
@@ -1525,7 +1525,7 @@ L34,VI,Veneto,Bilancio,Firebird,INVENTARIO,Cba informatica
 L34,MO,Emilia Romagna,Bilancio,Firebird,Inventario beni,Cba informatica
 L34,TV,Veneto,Bilancio,Firebird,Inventario beni,Cba informatica
 L34,VI,Veneto,Bilancio,Firebird,Inventario beni,Cba informatica
-L34,TV,Veneto,Altro: gestione amministrativa,Firebird,Inventario beni,Cba informatica
+L34,TV,Veneto,gestione amministrativa,Firebird,Inventario beni,Cba informatica
 L34,VI,Veneto,Bilancio,Firebird,Inventario beni,Cba informatica
 L34,VI,Veneto,Bilancio,Firebird,Inventario beni,Cba informatica
 L34,VI,Veneto,Bilancio,Firebird,Inventario beni,Cba informatica
@@ -1596,10 +1596,10 @@ L7,MN,Lombardia,Salute,Microsoft SQL Server,Isolabella,Praezision life
 L7,CR,Lombardia,Salute,Microsoft SQL Server,Isolabella,Praezision life
 L7,MI,Lombardia,Salute,Microsoft SQL Server,Isolabella/Soldanella,Praezision life
 L7,PD,Veneto,Salute,Oracle,ITEASY,Iteasy di P. Soranzo & C. s.n.c.
-L7,TE,Abruzzo,Altro:personale,Oracle,JEnte,Infor
-L7,TE,Abruzzo,Altro:personale,Oracle,JEnte,Infor
-L8,CZ,Calabria,Gestione documentale,Microsoft SQL Server,JEnte,Infor
-L7,TE,Abruzzo,Altro:personale,Oracle,JEnte,Infor
+L7,TE,Abruzzo,Personale,Oracle,JEnte,Infor
+L7,TE,Abruzzo,Personale,Oracle,JEnte,Infor
+L8,CZ,Calabria,gestione documentale,Microsoft SQL Server,JEnte,Infor
+L7,TE,Abruzzo,Personale,Oracle,JEnte,Infor
 L8,PR,Emilia Romagna,Infrastrutture,Oracle,Jmetis,Consorzio Metis
 L34,VE,Veneto,Salute,Oracle,Jobtime,Infoline
 L8,VA,Lombardia,Lavoro,Oracle,Jobtime,Infoline
@@ -1610,7 +1610,7 @@ L7,VA,Lombardia,Salute,Oracle,Jobtime,Infoline
 L8,PR,Emilia Romagna,Lavoro,Oracle,JobTime - Stato di Servizio,Info line S.r.l.
 L7,MI,Lombardia,Salute,Oracle. La base dati è in outsourcing,JSIPE,Santer Reply
 L8,PZ,Basilicata,Comunicazioni,Mysql,Kaistar,Regione Basilicata
-L7,CR,Lombardia,Amministrazione,Microsoft SQL Server,Karin,Sistemaintranet.com
+L7,CR,Lombardia,amministrazione,Microsoft SQL Server,Karin,Sistemaintranet.com
 L7,PG,Umbria,Salute,Oracle,Keyfor Formazione,KEYFOR S.r.l.
 L7,PI,Toscana,Bilancio,Oracle,Khalix,Dedalus
 L7,BZ,Trentino Alto Adige,Salute,Oracle,KIS,Medarchiver
@@ -1648,7 +1648,7 @@ L7,PG,Umbria,Salute,Mysql,LOGIX gestione nati,Logix
 L8,RC,Calabria,Salute,Microsoft SQL Server,LURTO,Cooperativa E.D.P. La Traccia - Matera
 L7,AQ,Abruzzo,Salute,Microsoft SQL Server,LURTO,La Traccia
 L8,MI,Lombardia,Altro: gestione Risorse Umane,Oracle,Maestro,Windex di Verona
-L7,TE,Abruzzo,Altro: amministrazione,DB2 AS/400,MAG01,Iasi s.rl.
+L7,TE,Abruzzo,amministrazione,DB2 AS/400,MAG01,Iasi s.rl.
 L34,VI,Veneto,Bilancio,Firebird,Magazzino,Cba informatica
 L34,TV,Veneto,Altro: gestione magazzino e approvvigionamenti dell'Ente,Firebird,Magazzino,Cba informatica
 L34,VR,Veneto,Bilancio,Firebird,Magazzino,Cba informatica
@@ -1792,7 +1792,7 @@ L7,AL,Piemonte,Salute,Microsoft SQL Server,MOW,Dedalus
 L8,PV,Lombardia,Salute,Oracle,MP SOLUTION,DSP
 L8,GE,Liguria,Salute,Oracle,MrYOU,Artexe SpA
 L8,GE,Liguria,Altro: gestione accessi,Microsoft SQL Server,MrYOU,Artexe SpA
-L7,MI,Lombardia,Altro: amministrazione,File system,MS File Share,Microsoft
+L7,MI,Lombardia,amministrazione,File system,MS File Share,Microsoft
 L7,MI,Lombardia,Salute,Sql,MTS Web,Invisiblefarm
 L7,FE,Emilia Romagna,Salute,Oracle,MyAliseo,Windex
 L8,MI,Lombardia,Altro: gestione Risorse Umane,Oracle,MyAliseo,Windex di Verona
@@ -1814,7 +1814,7 @@ L7,AQ,Abruzzo,Salute,Microsoft SQL Server,MyStart,Meteda
 L8,CR,Lombardia,Salute,Oracle,NEFRO,Lombardia informatica
 L8,BA,Puglia,Salute,Mysql,NEMO,IMPECO S.P.A
 L8,BA,Puglia,Salute,Mysql,NEMO,IMPECO S.P.A
-L7,MI,Lombardia,Altro: amministrazione,File PDF e txt,Nessuno,Nessuno
+L7,MI,Lombardia,amministrazione,File PDF e txt,Nessuno,Nessuno
 L7,BI,Piemonte,Salute,Microsoft SQL Server,Netcare,Healtware
 L7,BI,Piemonte,Salute,Microsoft SQL Server,Netcare,Healtware
 L7,CN,Piemonte,Bilancio,Oracle,NFS,Dedalus
@@ -1836,13 +1836,13 @@ L7,AQ,Abruzzo,Bilancio,Oracle,Oliamm,Engineering
 L8,MI,Lombardia,Salute,Oracle,Oliamm,Engineering
 L7,VA,Lombardia,Salute,Oracle,Oliamm,Engineering
 L8,MI,Lombardia,Salute,Oracle,Oliamm,Engineering
-L8,SO,Lombardia,Gestione amministrativo-contabile,Oracle,Oliamm,Engineering
+L8,SO,Lombardia,gestione amministrativa,Oracle,Oliamm,Engineering
 L7,BI,Piemonte,Salute,Oracle,Oliamm,Engineering
 L7,TO,Piemonte,Altro: specificare : Gestione contabilità pubblica,Oracle,Oliamm,Engineering
 L8,GE,Liguria,Salute,Oracle,Oliamm,Licenza d'uso
 L8,CR,Lombardia,Salute,Oracle,OmaWeb,Dedalus
-L7,MI,Lombardia,Altro: amministrazione,Sybase,Omni Touch 8450 Fax Server,Alcaltel- Lucent Italia Spa
-L7,MI,Lombardia,Altro: amministrazione,DBMS Sql Anywhere,OmniVista 4760,Alcaltel- Lucent Italia Spa
+L7,MI,Lombardia,amministrazione,Sybase,Omni Touch 8450 Fax Server,Alcaltel- Lucent Italia Spa
+L7,MI,Lombardia,amministrazione,DBMS Sql Anywhere,OmniVista 4760,Alcaltel- Lucent Italia Spa
 L8,MI,Lombardia,Salute,Oracle,OM - Order Manager,Lombardia informatica
 L8,CO,Lombardia,Salute,Oracle,OM - Order Manager,Lombardia informatica
 L8,MI,Lombardia,Salute,Oracle,OM - Order Manager,Lombardia informatica
@@ -1877,14 +1877,14 @@ L7,SV,Liguria,Salute,Oracle,ONESYS,ASL2
 L7,RO,Veneto,Salute,Oracle,ONVAC,Gruppo SW Regionale
 L8,MI,Lombardia,Salute,Oracle,OPENLIS,Engineering
 L8,RC,Calabria,Salute,Oracle,OpenLis Laboratorio Analisi,Engineering
-L8,MI,Lombardia,Altro: gestione documentale,Oracle,Openwork,NordCom
+L8,MI,Lombardia,gestione documentale,Oracle,Openwork,NordCom
 L8,BO,Emilia Romagna,Trasparenza,Oracle,Openwork,NSI Nier Soluzioni Informatiche
 L8,MI,Lombardia,Salute,Microsoft SQL Server,OpenWorks,NordCom
 L7,BS,Lombardia,Salute,Oracle,OPRWEB,Hitech S.p.A.
 L7,BS,Lombardia,Salute,Oracle,OPRWEB,Hitech S.p.A.
 L7,BS,Lombardia,Salute,Oracle,OPRWEB,Hitech S.p.A.
 L8,CR,Lombardia,Salute,Oracle,Oracle Applications,Oracle
-L7,MI,Lombardia,Altro: amministrazione,Oracle,Oracle eBusiness Suite,Oracle
+L7,MI,Lombardia,amministrazione,Oracle,Oracle eBusiness Suite,Oracle
 L7,MI,Lombardia,Salute,Oracle,Oracle ERP,"Oracle, con personalizzazioni di Santer Reply"
 L7,BS,Lombardia,Bilancio,Oracle,Oracolo,Oslo
 L8,SO,Lombardia,Bilancio,Oracle,Oracolo,Oslo
@@ -1952,7 +1952,7 @@ L34,MB,Lombardia,Trasparenza,"Mysql, XML",Patrasparente-modulo AVCP Legge 190/20
 L8,BA,Puglia,Salute,Microsoft SQL Server,PBM - CPM - Sole 24 Ore,Sole 24 Ore
 L7,BI,Piemonte,Salute,Microsoft SQL Server,PD,Healtware
 L8,PR,Emilia Romagna,Salute,Mysql,PDT,CSAmed
-L7,LO,Lombardia,Documentale,Raman,PECmanager,Archiflow
+L7,LO,Lombardia,gestione documentale,Raman,PECmanager,Archiflow
 L8,GE,Liguria,Salute,Shared Folders,PEDCATH,Scientifica Software Solutions
 L7,LU,Toscana,Salute,Oracle,PELLICANO,Mesis
 L8,CR,Lombardia,Salute,Mysql,Pensioni,Inpdap
@@ -2052,7 +2052,7 @@ L8,PR,Emilia Romagna,Comunicazioni,Microsoft SQL Server,Proteus,Infocert
 L7,AQ,Abruzzo,Salute,Microsoft SQL Server,Proteus,Regione Abruzzo
 L7,CR,Lombardia,Salute,Mysql,Registro Tumori,ASL Milano 1
 L34,VI,Veneto,Bilancio,Firebird,Protocollo,Cba informatica
-L34,TV,Veneto,Altro: gestione amministrativa,Firebird,Protocollo,Cba informatica
+L34,TV,Veneto,gestione amministrativa,Firebird,Protocollo,Cba informatica
 L34,VR,Veneto,Bilancio,Firebird,Protocollo,Cba informatica
 C7,CN,Piemonte,Bilancio,Firebird,Protocollo,Cba informatica
 L34,RE,Emilia Romagna,Bilancio,Firebird,Protocollo,Cba informatica
@@ -2149,9 +2149,9 @@ L34,TN,Trentino Alto Adige,Bilancio,Microsoft SQL Server,Protocollo informatico,
 L34,PC,Emilia Romagna,Salute,Microsoft SQL Server,Protocollo informatico,Esakon
 L34,VR,Veneto,Salute,Microsoft SQL Server,Protocollo informatico,Esakon
 L34,VE,Veneto,Salute,Microsoft SQL Server,Protocollo informatico,Esakon
-L34,UD,Friuli Venezia Giulia,Altro: protocollo, Lotus Notes,Protocollo informatico,Globalcomm srl
-L34,UD,Friuli Venezia Giulia,Altro: protocollo, Lotus Notes,Protocollo informatico,Globalcomm srl
-L34,UD,Friuli Venezia Giulia,Altro: protocollo, Lotus Notes,Protocollo informatico,Globalcomm srl
+L34,UD,Friuli Venezia Giulia,protocollo, Lotus Notes,Protocollo informatico,Globalcomm srl
+L34,UD,Friuli Venezia Giulia,protocollo, Lotus Notes,Protocollo informatico,Globalcomm srl
+L34,UD,Friuli Venezia Giulia,protocollo, Lotus Notes,Protocollo informatico,Globalcomm srl
 L7,BS,Lombardia,Bilancio,Sql,PROVECO,Sviluppo interno
 L8,MI,Lombardia,Salute,Oracle,Psweb,Engineering
 L8,BO,Emilia Romagna,Bilancio,Oracle,PrWeb,Data processing
@@ -2254,13 +2254,13 @@ L34,VI,Veneto,Previdenza e assistenza,Firebird,RID/MAV,Cba informatica
 L34,TN,Trentino Alto Adige,Previdenza e assistenza,Firebird,RID/MAV,Cba informatica
 L34,RA,Emilia Romagna,Previdenza e assistenza,Firebird,RID/MAV,Cba informatica
 L34,TN,Trentino Alto Adige,Previdenza e assistenza,Firebird,RID/MAV,Cba informatica
-L34,TN,Trentino Alto Adige,Altro: Gestione utenti,Firebird,RID/MAV,Cba informatica
+L34,TN,Trentino Alto Adige,gestione utenti,Firebird,RID/MAV,Cba informatica
 L34,TN,Trentino Alto Adige,Previdenza e assistenza,Firebird,RID/MAV,Cba informatica
 L34,TN,Trentino Alto Adige,Previdenza e assistenza,Firebird,RID RAPPORTO INTERBANCARIO DIRETTO,Cba informatica
 L7,PG,Umbria,Salute,Mysql,Rilascio patenti,Micra
 L34,RE,Emilia Romagna,Lavoro,Firebird,Rilevazione presenze,Cba informatica
 L34,PD,Veneto,Lavoro,Firebird,Rilevazione presenze,Cba informatica
-L34,VI,Veneto,Altro: rilevazione presenze,Microsoft SQL Server,Rilevazione presenze,24 ore software Spa
+L34,VI,Veneto,rilevazione presenze,Microsoft SQL Server,Rilevazione presenze,24 ore software Spa
 L34,VI,Veneto,Lavoro,Firebird,Rilevazione presenze,Cba informatica
 L34,TV,Veneto,Lavoro,Firebird,Rilevazione presenze,Cba informatica
 L34,PD,Veneto,Lavoro,Firebird,Rilevazione presenze,Cba informatica
@@ -2318,7 +2318,7 @@ L34,VR,Veneto,Salute,Microsoft SQL Server,Rilevazione presenze,Solari Udine
 L8,CO,Lombardia,Organizzazione,Mysql,Rilevazione Presenze Tecnici Esterni,CED Azienda Ospedaliera Sant'Anna
 L8,CO,Lombardia,Organizzazione,Mysql,Rilevazione Trasferimenti Fuori Sede,CED Azienda Ospedaliera Sant'Anna
 L8,PZ,Basilicata,Lavoro,Oracle,Ril.Pres.,Coop. Edp la traccia
-L8,PZ,Basilicata,Rilevazione presenze,Oracle,Ril.Pres.,Coop. E.D.P. La Traccia s.c. a r.l.
+L8,PZ,Basilicata,rilevazione presenze,Oracle,Ril.Pres.,Coop. E.D.P. La Traccia s.c. a r.l.
 L8,BO,Emilia Romagna,Salute,Oracle,RIPO,Cineca
 L7,AO,Valle D'Aosta,Salute,Oracle,Ris Disaster Recovery,Siemens
 L7,CN,Piemonte,Salute,Oracle,RIS,Elco
@@ -2395,7 +2395,7 @@ L8,MI,Lombardia,Salute,Oracle,SA4CUP - Centro Unico Prenotazione,Data processing
 L7,FE,Emilia Romagna,Salute,Oracle,SA4GST,Data processing
 L7,CR,Lombardia,Salute,Oracle,SA4WEB,ADS S.p.A. - Bologna
 L7,MI,Lombardia,Salute,Oracle,Salute Mentale,DSP
-L7,MI,Lombardia,Altro: amministrazione,Mysql,SAN_Z,ASL Milano 2
+L7,MI,Lombardia,amministrazione,Mysql,SAN_Z,ASL Milano 2
 L8,BA,Puglia,Salute,Oracle 11g Express Edition,SAPIO,Sviluppato internamente (Dipartimento interdisciplinare medicina ospedaliera)
 L7,SS,Sardegna,Salute,Microsoft SQL Server,SAR,"RTI (Engineering.mo, AICOF, CGM)"
 L7,VS,Sardegna,Salute,Microsoft SQL Server,SAR,"RTI (Engineering.mo, AICOF, CGM)"
@@ -2403,7 +2403,7 @@ L7,OG,Sardegna,Salute,Microsoft SQL Server,SAR,"RTI (Engineering.mo, AICOF, CGM)
 L7,OT,Sardegna,Salute,Microsoft SQL Server,SAR,"RTI (Engineering.mo, AICOF, CGM)"
 L7,CA,Sardegna,Salute,Microsoft SQL Server,SAR,"RTI (Engineering.mo, AICOF, CGM)"
 L7,CR,Lombardia,Salute,Sas,SAS,Santer Reply
-L7,CR,Lombardia,Amministrazione,Sas,SAS,Santer Reply
+L7,CR,Lombardia,amministrazione,Sas,SAS,Santer Reply
 L7,SV,Liguria,Salute,DB SAS,SAS,SAS
 L7,PG,Umbria,Salute,Mysql,SAT,Micra
 L8,CN,Piemonte,Altro: pubblicazioni,Dbms,Saturnpubbl,Siscom spa
@@ -2413,7 +2413,7 @@ L34,FE,Emilia Romagna,Previdenza e assistenza,Firebird,SCHEDA FAR,Cba informatic
 L34,TN,Trentino Alto Adige,Previdenza e assistenza,Firebird,SCHEDA NSIS,Cba informatica
 L34,TN,Trentino Alto Adige,Previdenza e assistenza,Firebird,SCHEDA NSIS,Cba informatica
 L34,TN,Trentino Alto Adige,Previdenza e assistenza,Firebird,SCHEDA NSIS,Cba informatica
-L34,TN,Trentino Alto Adige,Altro: Gestione utenti,Firebird,SCHEDA VALUTAZIONE REGIONALE S.Va.M.A.,Cba informatica
+L34,TN,Trentino Alto Adige,gestione utenti,Firebird,SCHEDA VALUTAZIONE REGIONALE S.Va.M.A.,Cba informatica
 L34,VI,Veneto,Previdenza e assistenza,Firebird,SCHEDE DI VALUTAZIONE REGIONALI (SVAMA),Cba informatica
 L34,PC,Emilia Romagna,Salute,Microsoft SQL Server,Schede VMD,Esakon
 L34,VE,Veneto,Salute,Microsoft SQL Server,Schede VMD,Esakon
@@ -2502,9 +2502,9 @@ L7,AQ,Abruzzo,Lavoro,DB2 AS/400,SIGMAPERS,Sigma Informatica
 L7,RO,Veneto,Salute,DB2 AS/400,SIGMAPERS,Sigma Informatica
 L8,PZ,Basilicata,Lavoro,Oracle,Sigru,Publisys S.p.A
 L7,PI,Toscana,Personale,Oracle,S.I.I.,Dedalus
-L7,RC,Calabria,Gestione documentale,Sybase sql anywhere,SIIPAL,Golem software s.r.l.
-L8,CZ,Calabria,Gestione documentale,Sybase sql anywhere,SIIPAL,Golem software s.r.l.
-L7,CZ,Calabria,Gestione documentale,Sybase sql anywhere,SIIPAL,Golem software s.r.l.
+L7,RC,Calabria,gestione documentale,Sybase sql anywhere,SIIPAL,Golem software s.r.l.
+L8,CZ,Calabria,gestione documentale,Sybase sql anywhere,SIIPAL,Golem software s.r.l.
+L7,CZ,Calabria,gestione documentale,Sybase sql anywhere,SIIPAL,Golem software s.r.l.
 L7,VS,Sardegna,Salute,Microsoft SQL Server,SILUS,Noemalife
 L7,SS,Sardegna,Salute,Microsoft SQL Server,SILUS,Noemalife
 L7,OT,Sardegna,Salute,Microsoft SQL Server,SILUS,Noemalife
@@ -2516,13 +2516,13 @@ L8,TR,Umbria,Salute,Microsoft SQL Server,Simpledo,SBG
 L8,BG,Lombardia,Salute,Oracle,Sincromed - Gestione refertazione delle immagini radiologiche,FujiFilm
 L8,TR,Umbria,Salute,Microsoft SQL Server,Sinedi,Az.Osp. S.Maria di Terni
 L7,PT,Toscana,Salute,Oracle,SINSS- ASTER,Caribel Programmazione
-L8,CZ,Calabria,Gestione documentale,Microsoft SQL Server,SIO,Infosys
+L8,CZ,Calabria,gestione documentale,Microsoft SQL Server,SIO,Infosys
 L34,TN,Trentino Alto Adige,Lavoro,Firebird,SIPCAR NEWS,Cba informatica
 L34,VI,Veneto,Lavoro,Firebird,SIPCAR NEWS,Cba informatica
 L34,TN,Trentino Alto Adige,Lavoro,Firebird,SIPCAR NEWS,Cba informatica
 L34,TN,Trentino Alto Adige,Lavoro,Firebird,SIPCAR NEWS,Cba informatica
 L34,BZ,Trentino Alto Adige,Lavoro,Firebird,Stipendi,Cba informatica
-L7,MI,Lombardia,Altro: amministrazione,NSF IBM Domino,SIPR,Sistemi Informativi Srl
+L7,MI,Lombardia,amministrazione,NSF IBM Domino,SIPR,Sistemi Informativi Srl
 L7,OG,Sardegna,Salute,Oracle,SIPSO,AICOF
 L7,CI,Sardegna,Salute,Oracle,SIPSO,AICOF
 L7,CA,Sardegna,Salute,Oracle,SIPSO,AICOF
@@ -2886,9 +2886,9 @@ L8,CR,Lombardia,Salute,Oracle,Taonet,Edp progetti
 L7,PG,Umbria,Salute,Oracle,Taonet,Roche
 L7,TO,Piemonte,Salute,Oracle,Taonet,Roche
 L7,VR,Veneto,Salute,Oracle,TD Sinergy,Siemens
-L8,CZ,Calabria,Gestione documentale,Microsoft SQL Server,TD Sinergy,TECHNICDATA
+L8,CZ,Calabria,gestione documentale,Microsoft SQL Server,TD Sinergy,TECHNICDATA
 L7,PG,Umbria,Salute,Oracle,TD SINERGY TD WEB,Siemens / Keyfor
-C7,RM,Lazio,Altro: contabilità,Microsoft SQL Server,TeamGovernement,Gesinf
+C7,RM,Lazio,Contabilità,Microsoft SQL Server,TeamGovernement,Gesinf
 L34,VE,Veneto,Lavoro,Microsoft SQL Server,Teamweb,Selesta ingegneria
 L8,BA,Puglia,Salute,Microsoft SQL Server,TECINFO,TECON S.RL.
 L7,AO,Valle D'Aosta,Lavoro,Postgresql,Teleconsulto,Medas
@@ -2898,12 +2898,12 @@ L34,VI,Veneto,Previdenza e assistenza,Firebird,Terapie,Cba informatica
 L34,TN,Trentino Alto Adige,Previdenza e assistenza,Firebird,Terapie,Cba informatica
 L34,MB,Lombardia,Previdenza e assistenza,Firebird,Terapie,Cba informatica
 L34,TN,Trentino Alto Adige,Previdenza e assistenza,Firebird,Terapie,Cba informatica
-L8,CN,Piemonte,Rilevazione presenze,MSDE,Term Talk 3,Solari Udine
+L8,CN,Piemonte,rilevazione presenze,MSDE,Term Talk 3,Solari Udine
 L7,VE,Veneto,Salute,Db2,Territorio,ULSS 13
 L8,TR,Umbria,Salute,Microsoft SQL Server,Thema,Swisslog
-C7,RM,Lazio,Altro:personale,Microsoft SQL Server,TimeWeb,Eltime
+C7,RM,Lazio,Personale,Microsoft SQL Server,TimeWeb,Eltime
 L34,TN,Trentino Alto Adige,Lavoro,Microsoft SQL Server,Time&work,Solari Udine
-L8,CN,Piemonte,Rilevazione presenze,MSDE,Time & Work è l'applicativo; DBStart è il nome del Database,Solari Udine
+L8,CN,Piemonte,rilevazione presenze,MSDE,Time & Work è l'applicativo; DBStart è il nome del Database,Solari Udine
 L7,MI,Lombardia,Salute,Sql,Tirocini,ASL Milano
 L7,TR,Umbria,Salute,Microsoft SQL Server,TMM,Mesis
 L7,BI,Piemonte,Salute,Microsoft SQL Server,TMM,Mesis
@@ -3005,7 +3005,7 @@ L34,UD,Friuli Venezia Giulia,Lavoro,Firebird,Turni di lavoro,Cba informatica
 L34,RE,Emilia Romagna,Lavoro,Firebird,Turni di lavoro,Cba informatica
 L7,BO,Emilia Romagna,Salute,Oracle,Turni@rc Web Edition,Archimede
 L7,PT,Toscana,Salute,DB2 AS/400,Uam,Dedalus
-L7,CR,Lombardia,Amministrazione,Db2,Uam,Dedalus
+L7,CR,Lombardia,amministrazione,Db2,Uam,Dedalus
 L7,PD,Veneto,Salute,Db2/400,UGS,Dedalus
 L7,PT,Toscana,Salute,DB2 AS/400,UGS CUP,Dedalus
 L7,PD,Veneto,Salute,Db2/400,UGS-H0,Dedalus
@@ -3069,7 +3069,7 @@ L8,CN,Piemonte,Lavoro,Oracle,Whr,Dedalus
 L8,MI,Lombardia,Salute,Oracle,Whr,Dedalus
 L7,PT,Toscana,Salute,Oracle,Whr,Dedalus
 L7,AL,Piemonte,Salute,Oracle,Whr,Dedalus
-L7,CR,Lombardia,Amministrazione,Oracle,Whr,Dedalus
+L7,CR,Lombardia,amministrazione,Oracle,Whr,Dedalus
 L7,BO,Emilia Romagna,Salute,Microsoft SQL Server,Wincare,Tsd Project
 L7,BO,Emilia Romagna,Salute,Microsoft SQL Server,Wincare,Tsd Project
 L7,TE,Abruzzo,Salute,Microsoft SQL Server,Wincare,Tsd projects s.r.l.
@@ -3082,7 +3082,7 @@ L34,VI,Veneto,Lavoro,DB FoxPro,WinflyEU,C.R.M. Informatica s.r.l.
 L8,PR,Emilia Romagna,Salute,Microsoft SQL Server,WinFood,Medimatica
 L8,PZ,Basilicata,Salute,Mysql,Win. GLA,A.C.S. srl
 L7,PZ,Basilicata,Salute,Mysql,Win. GLA,A.C.S. srl
-L8,CZ,Calabria,Gestione documentale,Microsoft SQL Server,WinLab,Tesi
+L8,CZ,Calabria,gestione documentale,Microsoft SQL Server,WinLab,Tesi
 L8,MI,Lombardia,Salute,Mysql,WinLab,Tesi
 L8,MI,Lombardia,Salute,Microsoft SQL Server,WinLab,Tesi Elettronica S.p.A.
 L8,TR,Umbria,Salute,Microsoft SQL Server,WinLab,Tesi informatica
