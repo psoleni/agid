@@ -43,6 +43,7 @@ In particolare, per quanto riguarda la contrazione più significativa, vale la pe
 Analisi
 
 L'indagine è stata svolta utilizzando l'ambiente software R, liberamente disponibile, pensato per effettuare indagini statistiche e grafiche.
+R è di fatto uno degli ambienti maggiormente utilizzati in ambito di ricerca statistico perchè è open source, ha una forte capacità espressiva (è un linguaggio, non un programma), è dotato di eccellenti e flessibili metodi orientati alla presentazione di grafici e visualizzazione di dati. Dal punto di vista pratico, è risultato particolarmente agevole lo sviluppo sotto forma di script (e quindi non di operazioni visuali) delle operazioni necessarie alla rappresentazione del presente studio, separandole completamente dal dataset di partenza, sul quale parallelamente venivano svolte le summenzionate procedure di pulizia.
 
 Consistenza del dataset rispetto ai dati complessivi
 
@@ -90,8 +91,8 @@ WHERE
 Pertinenza geografica dei dataset rispetto alle amministrazioni
 
 Un'altra interessante ed importante caratteristica dei dati in analisi riguarda la sua distribuzione rispetto alle fonti dati originali.
-Attraverso le informazioni di localizzazione delle Amministrazioni, è stato infatti possibile collegare ad ogni base dati del dataset una collocazione geografica. L'aggregazione per Regione e per Provincia, riportata in sovrapposizione nel grafico seguente, suggerisce una forte connotazione del dataset a partire da alcune specifiche Regioni, in particolare dell'Italia Settentrionale.
-Quest'aspetto caratterizza fortemente le altre statistiche, in particolare quelle riconducibili ad una aggregazione per numero di dataset, in quanto gli aspetti di similarità di unità statistiche afferenti allo stesso gruppo di provenienza, presentano delle caratteristiche analoghe.
+Attraverso le informazioni di localizzazione delle Amministrazioni, è stato infatti possibile associare ad ogni base dati del dataset una collocazione geografica. L'aggregazione per Regione e per Provincia, riportata in sovrapposizione nel grafico seguente, suggerisce una forte connotazione del dataset a partire da alcune specifiche Regioni, in particolare dell'Italia Settentrionale. Il riferimento utilizzato naturalmente non ha alcuna implicazione alcuna circa l'argomento della base di dati (un dataset di un'Amministrazione di Venezia può riguardare l'intero territorio Regionale, come pure un'area rurale, ecc.), ma è invece interessante per agglomerare le basi dati per gruppi di provenienza.
+Come si vedrà nel seguito dello studio, questa connotazione caratterizza fortemente le altre statistiche, in particolare quelle riconducibili ad una aggregazione per numero di dataset, in quanto gli aspetti di similarità di unità statistiche afferenti allo stesso gruppo di provenienza, presentano delle caratteristiche analoghe.
 Inoltre si osserva come non risulti pervenuta nessuna informazione da alcune intere Regioni.
 
 
@@ -130,7 +131,7 @@ E' interessante anche notare che il produttore Noemalife appare in questo grafic
 
 Prodotti: i 50 prodotti più diffusi
 
-Per verificare quanto relativo all'ultima osservazione appena appuntata, si è elaborata un'altra rappresentazione della diffusione dei prodotti, stavolta indipendente dal numero di dataset assoluti, e costituita dallo studio della loro copertura, ovvero dalla valutazione del numero di Regioni dove il prodotto è utilizzato almeno una volta.
+Per verificare quanto relativo all'ultima osservazione appena appuntata, si è elaborata un'altra rappresentazione della diffusione dei prodotti, stavolta indipendente dal numero di dataset assoluti, e costituita dallo studio della loro copertura, ovvero dalla valutazione del numero complessivo di Regioni dove il prodotto è utilizzato almeno una volta.
 Il risultato è quindi indipendente dalla sproporzione dovuta al numero di dataset di alcuni specifici prodotti, e consente di individuare i prodotti con una più vasta diffusione sul territorio.
 Il grafico rappresenta nella parte bassa i prodotti con diffusione più ampia, mentre verso l'alto si collocano i prodotti con minore diffusione: si conferma la presenza, come avevamo marginalmente osservato nel grafico precedente, del produttore Noemalife, con due prodotti distinti; segue poi il blocco dei prodotti di Cba Informatica, già emersa in precedenza per le vaste attribuzioni nelle Regioni Settentrionali. Si notano poi nella parte resetante, scorrendo i nomi dei produttori, alcuni più ricorrenti di altri, in particolare Dedalus ed Engineering.
 
